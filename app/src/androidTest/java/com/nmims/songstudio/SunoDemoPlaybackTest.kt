@@ -18,6 +18,33 @@ import java.util.concurrent.atomic.AtomicReference
 
 @RunWith(AndroidJUnit4::class)
 class SunoDemoPlaybackTest {
+    @Test fun downloadedChemistrySongAdvancesContinuouslyWithoutBuffering() = runBlocking {
+        val context = InstrumentationRegistry.getInstrumentation().targetContext
+        val song = SunoDemo.catalog(context).first { it.topicId == 1001 }
+        val file = requireNotNull(SunoDemo.bundledAudio(context, song))
+        val assetBytes = context.assets.open(song.assetPath).use { it.readBytes() }
+        assertTrue("Playback must use the exact downloaded MP3", assetBytes.contentEquals(file.readBytes()))
+        val player = MediaPlayer()
+        val buffering = java.util.concurrent.atomic.AtomicInteger(0)
+        try {
+            player.setAudioAttributes(AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_MEDIA).setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).build())
+            player.setOnInfoListener { _, what, _ ->
+                if (what == MediaPlayer.MEDIA_INFO_BUFFERING_START) buffering.incrementAndGet()
+                false
+            }
+            player.setDataSource(file.absolutePath); player.prepare(); player.start()
+            var previous = 0
+            repeat(20) {
+                SystemClock.sleep(500)
+                assertTrue("Downloaded song stopped unexpectedly", player.isPlaying)
+                val current = player.currentPosition
+                assertTrue("Playback stalled at $current ms", current - previous >= 150)
+                previous = current
+            }
+            assertEquals("Local MP3 should not buffer", 0, buffering.get())
+        } finally { player.release() }
+    }
+
     @Test fun allBundledRecordingsAreSelectableAndPlayToTheirEndAfterSeeking() = runBlocking {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         val curriculum = Curriculum(context)

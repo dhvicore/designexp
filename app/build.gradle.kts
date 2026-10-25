@@ -20,6 +20,7 @@ android {
     }
 }
 dependencies {
+    implementation("androidx.media3:media3-exoplayer:1.9.3")
     implementation("androidx.activity:activity-compose:1.13.0")
     implementation("androidx.compose.ui:ui-android:1.10.4")
     implementation("androidx.compose.foundation:foundation-android:1.10.4")

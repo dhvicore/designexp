@@ -7,7 +7,77 @@
     "lyrics": "[Chorus]\nOn closed\nInterval\nNo breaks found\nSlope exists each point inside\nEqual ends\nThree conditions hold\nSome see lies just in between\nZero slope\nHere at see\nThere's at least one point within\nFlat tangent\nRoll's theorem holds true\nThese three rules apply",
     "assetPath": "demos/rolle_levitating_suno.mp3",
     "shareUrl": "https://suno.com/s/ahgu88j3c2ZXX83y",
-    "sha256": "ebd0777ae385d5f680541b0313d4e480d12dbf9eb6abf95929fbb9fec27c1070"
+    "sha256": "ebd0777ae385d5f680541b0313d4e480d12dbf9eb6abf95929fbb9fec27c1070",
+    "cues": [
+      {
+        "startMs": 0,
+        "endMs": 2040,
+        "text": "On closed"
+      },
+      {
+        "startMs": 2040,
+        "endMs": 3800,
+        "text": "Interval"
+      },
+      {
+        "startMs": 3800,
+        "endMs": 5040,
+        "text": "No breaks found"
+      },
+      {
+        "startMs": 5040,
+        "endMs": 8160,
+        "text": "Slope exists each point inside"
+      },
+      {
+        "startMs": 8160,
+        "endMs": 10100,
+        "text": "Equal ends"
+      },
+      {
+        "startMs": 10100,
+        "endMs": 11280,
+        "text": "Three conditions hold"
+      },
+      {
+        "startMs": 11280,
+        "endMs": 13740,
+        "text": "Some see lies just in between"
+      },
+      {
+        "startMs": 13740,
+        "endMs": 14800,
+        "text": "Zero slope"
+      },
+      {
+        "startMs": 14800,
+        "endMs": 16000,
+        "text": "Here at see"
+      },
+      {
+        "startMs": 16000,
+        "endMs": 18360,
+        "text": "There's at least one point within"
+      },
+      {
+        "startMs": 18360,
+        "endMs": 21260,
+        "text": "Flat tangent"
+      },
+      {
+        "startMs": 21260,
+        "endMs": 23180,
+        "text": "Roll's theorem holds true"
+      },
+      {
+        "startMs": 23180,
+        "endMs": 26020,
+        "text": "These three rules apply"
+      }
+    ],
+    "cueMethod": "Acoustic word alignment to this recording; approximate",
+    "timedLineCount": 13,
+    "suppliedLineCount": 13
   },
   {
     "topicId": 0,
@@ -17,7 +87,87 @@
     "lyrics": "Verse]\nबंद अंतराल ए से बी,\nफलन सतत हो, बात यही।\nखुले अंतराल के भीतर,\nअवकलज हो हर बिंदु पर।\n\nदोनों सिरों के मान समान,\nतीनों शर्तें रख लो ध्यान।\n\nढलान शून्य, याद रहे,\nरोल का नियम ये बात कहे।\nए और बी के बीच कहीं,\nकम से कम एक सी है यहीं।\nउस सी पर अवकलज शून्य,\nरोल का नियम, याद रखो यूँ।\n\nस्पर्श रेखा क्षैतिज होगी,\nतीन शर्तों से बात बनेगी।\n\nढलान शून्य, याद रहे,\nरोल का नियम ये बात कहे।\nए और बी के बीच कहीं,\nकम से कम एक सी है यहीं।",
     "assetPath": "demos/rolle_hindi_kala_chashma_suno.mp3",
     "shareUrl": "",
-    "sha256": "19a38d3db479a5493f1eca9092a489b51661c2b3c9e920ae4a0fea122b88f9c7"
+    "sha256": "19a38d3db479a5493f1eca9092a489b51661c2b3c9e920ae4a0fea122b88f9c7",
+    "cues": [
+      {
+        "startMs": 7500,
+        "endMs": 10570,
+        "text": "बंद अंतराल ए से बी,"
+      },
+      {
+        "startMs": 11660,
+        "endMs": 16840,
+        "text": "फलन सतत हो, बात यही।"
+      },
+      {
+        "startMs": 16840,
+        "endMs": 18980,
+        "text": "खुले अंतराल के भीतर,"
+      },
+      {
+        "startMs": 18980,
+        "endMs": 21560,
+        "text": "अवकलज हो हर बिंदु पर।"
+      },
+      {
+        "startMs": 21560,
+        "endMs": 24040,
+        "text": "दोनों सिरों के मान समान,"
+      },
+      {
+        "startMs": 24040,
+        "endMs": 27440,
+        "text": "तीनों शर्तें रख लो ध्यान।"
+      },
+      {
+        "startMs": 27440,
+        "endMs": 30850,
+        "text": "ढलान शून्य, याद रहे,"
+      },
+      {
+        "startMs": 31460,
+        "endMs": 35940,
+        "text": "रोल का नियम ये बात कहे।"
+      },
+      {
+        "startMs": 35940,
+        "endMs": 39980,
+        "text": "ए और बी के बीच कहीं,"
+      },
+      {
+        "startMs": 39980,
+        "endMs": 44460,
+        "text": "कम से कम एक सी है यहीं।"
+      },
+      {
+        "startMs": 44460,
+        "endMs": 46810,
+        "text": "उस सी पर अवकलज शून्य,"
+      },
+      {
+        "startMs": 46810,
+        "endMs": 51410,
+        "text": "रोल का नियम, याद रखो यूँ।"
+      },
+      {
+        "startMs": 51410,
+        "endMs": 55180,
+        "text": "स्पर्श रेखा क्षैतिज होगी,"
+      },
+      {
+        "startMs": 55550,
+        "endMs": 59590,
+        "text": "तीन शर्तों से बात बनेगी।"
+      },
+      {
+        "startMs": 59590,
+        "endMs": 60030,
+        "text": "ढलान शून्य, याद रहे,"
+      }
+    ],
+    "cueMethod": "Acoustic forced alignment of supplied Hindi lyrics to this recording; approximate",
+    "timedLineCount": 15,
+    "suppliedLineCount": 18
   },
   {
     "topicId": 0,
@@ -27,7 +177,102 @@
     "lyrics": "[Invocation]\nॐ सरस्वत्यै नमः,\nविद्या देहि, ज्ञानं देहि।\n\nबंद अंतराल ए से बी पर,\nफलन सतत बना रहे।\nखुले अंतराल के हर बिंदु पर,\nउसका अवकलज मौजूद रहे।\nदोनों सिरों के मान बराबर,\nतीनों शर्तें याद रहें।\n\nज्ञान का दीप जलाएँ,\nरोल का नियम हम गाएँ।\nए से बड़ा, बी से छोटा,\nकम से कम एक सी पाएँ।\nउस सी पर अवकलज शून्य,\nक्षैतिज स्पर्श रेखा पाएँ।\n\nतीनों शर्तें पहले देखें,\nफिर निष्कर्ष को अपनाएँ।\nॐ सरस्वत्यै नमः,\nरोल का नियम दोहराएँ।",
     "assetPath": "demos/rolle_bhajan_raghupati_suno.mp3",
     "shareUrl": "",
-    "sha256": "f87acd4de77821d9c81e1ace4ff1c7c549113ce5f89633834312651a221548e6"
+    "sha256": "f87acd4de77821d9c81e1ace4ff1c7c549113ce5f89633834312651a221548e6",
+    "cues": [
+      {
+        "startMs": 2400,
+        "endMs": 8530,
+        "text": "ॐ सरस्वत्यै नमः,"
+      },
+      {
+        "startMs": 9640,
+        "endMs": 16000,
+        "text": "विद्या देहि, ज्ञानं देहि।"
+      },
+      {
+        "startMs": 16000,
+        "endMs": 20090,
+        "text": "बंद अंतराल ए से बी पर,"
+      },
+      {
+        "startMs": 21180,
+        "endMs": 26120,
+        "text": "फलन सतत बना रहे।"
+      },
+      {
+        "startMs": 26120,
+        "endMs": 29950,
+        "text": "खुले अंतराल के हर बिंदु पर,"
+      },
+      {
+        "startMs": 30320,
+        "endMs": 34480,
+        "text": "उसका अवकलज मौजूद रहे।"
+      },
+      {
+        "startMs": 34480,
+        "endMs": 38270,
+        "text": "दोनों सिरों के मान बराबर,"
+      },
+      {
+        "startMs": 38620,
+        "endMs": 44180,
+        "text": "तीनों शर्तें याद रहें।"
+      },
+      {
+        "startMs": 44180,
+        "endMs": 47290,
+        "text": "ज्ञान का दीप जलाएँ,"
+      },
+      {
+        "startMs": 47440,
+        "endMs": 50600,
+        "text": "रोल का नियम हम गाएँ।"
+      },
+      {
+        "startMs": 50600,
+        "endMs": 53530,
+        "text": "ए से बड़ा, बी से छोटा,"
+      },
+      {
+        "startMs": 53620,
+        "endMs": 56680,
+        "text": "कम से कम एक सी पाएँ।"
+      },
+      {
+        "startMs": 56680,
+        "endMs": 59520,
+        "text": "उस सी पर अवकलज शून्य,"
+      },
+      {
+        "startMs": 59520,
+        "endMs": 63180,
+        "text": "क्षैतिज स्पर्श रेखा पाएँ।"
+      },
+      {
+        "startMs": 63180,
+        "endMs": 66600,
+        "text": "तीनों शर्तें पहले देखें,"
+      },
+      {
+        "startMs": 66600,
+        "endMs": 70200,
+        "text": "फिर निष्कर्ष को अपनाएँ।"
+      },
+      {
+        "startMs": 70200,
+        "endMs": 74930,
+        "text": "ॐ सरस्वत्यै नमः,"
+      },
+      {
+        "startMs": 75130,
+        "endMs": 81270,
+        "text": "रोल का नियम दोहराएँ।"
+      }
+    ],
+    "cueMethod": "Acoustic forced alignment of supplied Hindi lyrics to this recording; approximate",
+    "timedLineCount": 18,
+    "suppliedLineCount": 18
   },
   {
     "topicId": 0,
@@ -37,7 +282,92 @@
     "lyrics": "[Verse]\nOn the closed span, A to B,\nContinuous, no breaks to see.\nAt every point that's tucked inside,\nA derivative must reside.\n\nThe endpoint values are the same,\nThree conditions frame the claim.\n\nSomewhere inside, we'll find a see,\nStrictly between our A and B.\nAt least one point, the slope is zero,\nA horizontal tangent shows.\nRoll's theorem, let it show,\nThere's a point with zero slope.\n\nClosed span, no breaks; inside, a slope,\nEqual ends complete our scope.\nAt least one see lies in between,\nA zero slope upon the scene.\n```",
     "assetPath": "demos/rolle_lofi_perfect_suno.mp3",
     "shareUrl": "",
-    "sha256": "4200ba35cc1456f84fc20d84983fac4e55c1ec9b8c83991e79d96ad6caf40ae6"
+    "sha256": "4200ba35cc1456f84fc20d84983fac4e55c1ec9b8c83991e79d96ad6caf40ae6",
+    "cues": [
+      {
+        "startMs": 11440,
+        "endMs": 16950,
+        "text": "On the closed span, A to B,"
+      },
+      {
+        "startMs": 18240,
+        "endMs": 23890,
+        "text": "Continuous, no breaks to see."
+      },
+      {
+        "startMs": 24640,
+        "endMs": 28730,
+        "text": "At every point that's tucked inside,"
+      },
+      {
+        "startMs": 29700,
+        "endMs": 31950,
+        "text": "A derivative must reside."
+      },
+      {
+        "startMs": 32480,
+        "endMs": 36080,
+        "text": "The endpoint values are the same,"
+      },
+      {
+        "startMs": 36080,
+        "endMs": 39610,
+        "text": "Three conditions frame the claim."
+      },
+      {
+        "startMs": 41080,
+        "endMs": 46230,
+        "text": "Somewhere inside, we'll find a see,"
+      },
+      {
+        "startMs": 47480,
+        "endMs": 53140,
+        "text": "Strictly between our A and B."
+      },
+      {
+        "startMs": 53140,
+        "endMs": 60750,
+        "text": "At least one point, the slope is zero,"
+      },
+      {
+        "startMs": 61440,
+        "endMs": 64370,
+        "text": "A horizontal tangent shows."
+      },
+      {
+        "startMs": 65360,
+        "endMs": 67690,
+        "text": "Roll's theorem, let it show,"
+      },
+      {
+        "startMs": 68640,
+        "endMs": 72110,
+        "text": "There's a point with zero slope."
+      },
+      {
+        "startMs": 88300,
+        "endMs": 91970,
+        "text": "Closed span, no breaks; inside, a slope,"
+      },
+      {
+        "startMs": 93140,
+        "endMs": 97250,
+        "text": "Equal ends complete our scope."
+      },
+      {
+        "startMs": 99040,
+        "endMs": 104830,
+        "text": "At least one see lies in between,"
+      },
+      {
+        "startMs": 107240,
+        "endMs": 109300,
+        "text": "A zero slope upon the scene."
+      }
+    ],
+    "cueMethod": "Acoustic word alignment to this recording; approximate",
+    "timedLineCount": 16,
+    "suppliedLineCount": 16
   },
   {
     "topicId": 17,
@@ -47,7 +377,112 @@
     "lyrics": "[Verse]\nEm and en are greater than zero,\nZero to one is where we go.\nIntegrate ex to em minus one,\nTimes one minus ex to en minus one,\nWith respect to ex, and we're done.\nWe call this Euler's first integral.\n\nBeta, beta, em and en,\nSwap the order, same again.\nBeta em en, beta en em,\nSame two inputs, switch them round again.\n\nGamma em times gamma en,\nOver gamma of em plus en.\nThat's the beta link we know,\nLet the gamma rhythm flow.\n\nFor positive whole em and en,\nEm minus one factorial, then\nTimes en minus one factorial,\nOver em plus en minus one factorial.\nBeta, beta, em and en,\nSwap the order, same again.",
     "assetPath": "demos/beta_english_shape_of_you_suno.mp3",
     "shareUrl": "",
-    "sha256": "cdf5e8e06a5a188a158ee2e6bb7fe89c0cd375d8d79784898d2b1e62178f7210"
+    "sha256": "cdf5e8e06a5a188a158ee2e6bb7fe89c0cd375d8d79784898d2b1e62178f7210",
+    "cues": [
+      {
+        "startMs": 1920,
+        "endMs": 4280,
+        "text": "Em and en are greater than zero,"
+      },
+      {
+        "startMs": 4280,
+        "endMs": 7230,
+        "text": "Zero to one is where we go."
+      },
+      {
+        "startMs": 7580,
+        "endMs": 9740,
+        "text": "Integrate ex to em minus one,"
+      },
+      {
+        "startMs": 9740,
+        "endMs": 12240,
+        "text": "Times one minus ex to en minus one,"
+      },
+      {
+        "startMs": 12240,
+        "endMs": 15190,
+        "text": "With respect to ex, and we're done."
+      },
+      {
+        "startMs": 16280,
+        "endMs": 18710,
+        "text": "We call this Euler's first integral."
+      },
+      {
+        "startMs": 19600,
+        "endMs": 21370,
+        "text": "Beta, beta, em and en,"
+      },
+      {
+        "startMs": 21620,
+        "endMs": 23830,
+        "text": "Swap the order, same again."
+      },
+      {
+        "startMs": 23940,
+        "endMs": 25710,
+        "text": "Beta em en, beta en em,"
+      },
+      {
+        "startMs": 26640,
+        "endMs": 28990,
+        "text": "Same two inputs, switch them round again."
+      },
+      {
+        "startMs": 29520,
+        "endMs": 31600,
+        "text": "Gamma em times gamma en,"
+      },
+      {
+        "startMs": 31600,
+        "endMs": 33530,
+        "text": "Over gamma of em plus en."
+      },
+      {
+        "startMs": 33620,
+        "endMs": 35290,
+        "text": "That's the beta link we know,"
+      },
+      {
+        "startMs": 35980,
+        "endMs": 38130,
+        "text": "Let the gamma rhythm flow."
+      },
+      {
+        "startMs": 38580,
+        "endMs": 39770,
+        "text": "For positive whole em and en,"
+      },
+      {
+        "startMs": 41900,
+        "endMs": 43610,
+        "text": "Em minus one factorial, then"
+      },
+      {
+        "startMs": 44060,
+        "endMs": 45560,
+        "text": "Times en minus one factorial,"
+      },
+      {
+        "startMs": 45560,
+        "endMs": 48380,
+        "text": "Over em plus en minus one factorial."
+      },
+      {
+        "startMs": 48380,
+        "endMs": 50760,
+        "text": "Beta, beta, em and en,"
+      },
+      {
+        "startMs": 51740,
+        "endMs": 54740,
+        "text": "Swap the order, same again."
+      }
+    ],
+    "cueMethod": "Acoustic word alignment to this recording; approximate",
+    "timedLineCount": 20,
+    "suppliedLineCount": 20
   },
   {
     "topicId": 17,
@@ -57,7 +492,102 @@
     "lyrics": "```text\nएम और एन धनात्मक हों,\nशून्य से एक सीमाएँ हों।\nएक्स की घात एम ऋण एक,\nएक ऋण एक्स की घात एन ऋण एक।\nदोनों का गुणन समाकलित करो,\nएक्स के सापेक्ष आगे बढ़ो।\n\nबीटा, बीटा, याद रहे,\nऑयलर का पहला समाकल कहे।\nएम और एन को बदल के देखो,\nबीटा का मान वही तुम देखो।\n\nऊपर गामा एम से गामा एन गुणा,\nएम और एन का योग बनाओ।\nउस योग का गामा नीचे रखकर,\nभाग से बीटा का मान तुम पाओ।\n\nबीटा, बीटा, याद रहे,\nएम और एन धनात्मक रहें।\nशून्य से एक तक बात कहो,\nक्रम बदलो, मान वही पाओ।",
     "assetPath": "demos/beta_hindi_chaiyya_chaiyya_suno.mp3",
     "shareUrl": "",
-    "sha256": "eb1b40e7ee295b330ed65ad8fc72da38ec8a5399eed752fe2c63470e2386cefc"
+    "sha256": "eb1b40e7ee295b330ed65ad8fc72da38ec8a5399eed752fe2c63470e2386cefc",
+    "cues": [
+      {
+        "startMs": 13140,
+        "endMs": 16490,
+        "text": "एम और एन धनात्मक हों,"
+      },
+      {
+        "startMs": 17760,
+        "endMs": 22220,
+        "text": "शून्य से एक सीमाएँ हों।"
+      },
+      {
+        "startMs": 22220,
+        "endMs": 25860,
+        "text": "एक्स की घात एम ऋण एक,"
+      },
+      {
+        "startMs": 25860,
+        "endMs": 30500,
+        "text": "एक ऋण एक्स की घात एन ऋण एक।"
+      },
+      {
+        "startMs": 30500,
+        "endMs": 34090,
+        "text": "दोनों का गुणन समाकलित करो,"
+      },
+      {
+        "startMs": 34620,
+        "endMs": 40640,
+        "text": "एक्स के सापेक्ष आगे बढ़ो।"
+      },
+      {
+        "startMs": 40640,
+        "endMs": 43370,
+        "text": "बीटा, बीटा, याद रहे,"
+      },
+      {
+        "startMs": 43620,
+        "endMs": 48720,
+        "text": "ऑयलर का पहला समाकल कहे।"
+      },
+      {
+        "startMs": 48720,
+        "endMs": 52610,
+        "text": "एम और एन को बदल के देखो,"
+      },
+      {
+        "startMs": 52610,
+        "endMs": 57910,
+        "text": "बीटा का मान वही तुम देखो।"
+      },
+      {
+        "startMs": 57910,
+        "endMs": 61880,
+        "text": "ऊपर गामा एम से गामा एन गुणा,"
+      },
+      {
+        "startMs": 62230,
+        "endMs": 66590,
+        "text": "एम और एन का योग बनाओ।"
+      },
+      {
+        "startMs": 66590,
+        "endMs": 70160,
+        "text": "उस योग का गामा नीचे रखकर,"
+      },
+      {
+        "startMs": 70350,
+        "endMs": 76290,
+        "text": "भाग से बीटा का मान तुम पाओ।"
+      },
+      {
+        "startMs": 76290,
+        "endMs": 79070,
+        "text": "बीटा, बीटा, याद रहे,"
+      },
+      {
+        "startMs": 79070,
+        "endMs": 84210,
+        "text": "एम और एन धनात्मक रहें।"
+      },
+      {
+        "startMs": 84210,
+        "endMs": 88280,
+        "text": "शून्य से एक तक बात कहो,"
+      },
+      {
+        "startMs": 88850,
+        "endMs": 96390,
+        "text": "क्रम बदलो, मान वही पाओ।"
+      }
+    ],
+    "cueMethod": "Acoustic forced alignment of supplied Hindi lyrics to this recording; approximate",
+    "timedLineCount": 18,
+    "suppliedLineCount": 18
   },
   {
     "topicId": 17,
@@ -67,7 +597,112 @@
     "lyrics": "[Invocation]\nॐ सरस्वत्यै नमः,\nज्ञान का दीप जलाएँ।\n\nएम और एन धनात्मक लेकर,\nबीटा का रूप बताएँ।\nशून्य से एक की सीमा में,\nसमाकल हम अपनाएँ।\nएक्स की घात एम ऋण एक,\nएक ऋण एक्स की घात एन ऋण एक।\nदोनों का गुणन लेकर,\nएक्स के सापेक्ष समाकल लें।\n\nबीटा का गुण गाएँ,\nक्रम बदल, वही मान पाएँ।\nएम और एन हों, एन और एम हों,\nएक ही मान को पाएँ।\n\nगामा एम और गामा एन का,\nगुणन ऊपर आए।\nनीचे गामा एम और एन के योग का,\nभाग से बीटा पाएँ।\n\nॐ सरस्वत्यै नमः,\nसीखें और दोहराएँ।",
     "assetPath": "demos/beta_bhajan_om_jai_suno.mp3",
     "shareUrl": "",
-    "sha256": "3616c0adfbdc69c0dfcd843da620d0226f38287a52dbeee9fcd578ddc97e82b9"
+    "sha256": "3616c0adfbdc69c0dfcd843da620d0226f38287a52dbeee9fcd578ddc97e82b9",
+    "cues": [
+      {
+        "startMs": 4760,
+        "endMs": 10290,
+        "text": "ॐ सरस्वत्यै नमः,"
+      },
+      {
+        "startMs": 11620,
+        "endMs": 18500,
+        "text": "ज्ञान का दीप जलाएँ।"
+      },
+      {
+        "startMs": 18500,
+        "endMs": 22670,
+        "text": "एम और एन धनात्मक लेकर,"
+      },
+      {
+        "startMs": 22880,
+        "endMs": 25540,
+        "text": "बीटा का रूप बताएँ।"
+      },
+      {
+        "startMs": 25540,
+        "endMs": 28730,
+        "text": "शून्य से एक की सीमा में,"
+      },
+      {
+        "startMs": 28840,
+        "endMs": 32160,
+        "text": "समाकल हम अपनाएँ।"
+      },
+      {
+        "startMs": 32160,
+        "endMs": 34940,
+        "text": "एक्स की घात एम ऋण एक,"
+      },
+      {
+        "startMs": 34940,
+        "endMs": 38180,
+        "text": "एक ऋण एक्स की घात एन ऋण एक।"
+      },
+      {
+        "startMs": 38180,
+        "endMs": 40780,
+        "text": "दोनों का गुणन लेकर,"
+      },
+      {
+        "startMs": 40780,
+        "endMs": 43940,
+        "text": "एक्स के सापेक्ष समाकल लें।"
+      },
+      {
+        "startMs": 43940,
+        "endMs": 45860,
+        "text": "बीटा का गुण गाएँ,"
+      },
+      {
+        "startMs": 45860,
+        "endMs": 50300,
+        "text": "क्रम बदल, वही मान पाएँ।"
+      },
+      {
+        "startMs": 50300,
+        "endMs": 53860,
+        "text": "एम और एन हों, एन और एम हों,"
+      },
+      {
+        "startMs": 53860,
+        "endMs": 56880,
+        "text": "एक ही मान को पाएँ।"
+      },
+      {
+        "startMs": 56880,
+        "endMs": 61040,
+        "text": "गामा एम और गामा एन का,"
+      },
+      {
+        "startMs": 61040,
+        "endMs": 63200,
+        "text": "गुणन ऊपर आए।"
+      },
+      {
+        "startMs": 63200,
+        "endMs": 66980,
+        "text": "नीचे गामा एम और एन के योग का,"
+      },
+      {
+        "startMs": 66980,
+        "endMs": 69580,
+        "text": "भाग से बीटा पाएँ।"
+      },
+      {
+        "startMs": 69580,
+        "endMs": 76120,
+        "text": "ॐ सरस्वत्यै नमः,"
+      },
+      {
+        "startMs": 76120,
+        "endMs": 82540,
+        "text": "सीखें और दोहराएँ।"
+      }
+    ],
+    "cueMethod": "Acoustic forced alignment of supplied Hindi lyrics to this recording; approximate",
+    "timedLineCount": 20,
+    "suppliedLineCount": 20
   },
   {
     "topicId": 17,
@@ -77,7 +712,112 @@
     "lyrics": "```text\nEm and en, both positive,\nA quiet space to integrate.\nFrom zero up to one we go,\nLet the beta lesson flow.\n\nEx to the power em minus one,\nTimes one minus ex to en minus one.\nIntegrate with respect to ex,\nThat's our beta, step by step.\n\nBeta em en, turn it round,\nBeta en em, same value found.\nSwap the inputs, let them flow,\nSymmetry is what we know.\n\nGamma em times gamma en,\nOver gamma of em plus en.\nKeep the sum inside that gamma,\nThat's the link we will remember.\n\nPositive inputs, zero to one,\nBeta and gamma, gently sung.\nBeta em en, turn it round,\nBeta en em, same value found.\n```",
     "assetPath": "demos/beta_lofi_sunflower_suno.mp3",
     "shareUrl": "",
-    "sha256": "cbeb54f367f8a50f67b0a823fe648653415792cbfc8465653283c11fb7686491"
+    "sha256": "cbeb54f367f8a50f67b0a823fe648653415792cbfc8465653283c11fb7686491",
+    "cues": [
+      {
+        "startMs": 6820,
+        "endMs": 10410,
+        "text": "Em and en, both positive,"
+      },
+      {
+        "startMs": 11320,
+        "endMs": 16330,
+        "text": "A quiet space to integrate."
+      },
+      {
+        "startMs": 18680,
+        "endMs": 21970,
+        "text": "From zero up to one we go,"
+      },
+      {
+        "startMs": 22440,
+        "endMs": 25530,
+        "text": "Let the beta lesson flow."
+      },
+      {
+        "startMs": 30480,
+        "endMs": 33070,
+        "text": "Ex to the power em minus one,"
+      },
+      {
+        "startMs": 33100,
+        "endMs": 39410,
+        "text": "Times one minus ex to en minus one."
+      },
+      {
+        "startMs": 39520,
+        "endMs": 42730,
+        "text": "Integrate with respect to ex,"
+      },
+      {
+        "startMs": 46900,
+        "endMs": 49310,
+        "text": "That's our beta, step by step."
+      },
+      {
+        "startMs": 51460,
+        "endMs": 52810,
+        "text": "Beta em en, turn it round,"
+      },
+      {
+        "startMs": 54020,
+        "endMs": 55700,
+        "text": "Beta en em, same value found."
+      },
+      {
+        "startMs": 55700,
+        "endMs": 58930,
+        "text": "Swap the inputs, let them flow,"
+      },
+      {
+        "startMs": 59480,
+        "endMs": 62230,
+        "text": "Symmetry is what we know."
+      },
+      {
+        "startMs": 62560,
+        "endMs": 65320,
+        "text": "Gamma em times gamma en,"
+      },
+      {
+        "startMs": 65320,
+        "endMs": 68310,
+        "text": "Over gamma of em plus en."
+      },
+      {
+        "startMs": 68760,
+        "endMs": 71380,
+        "text": "Keep the sum inside that gamma,"
+      },
+      {
+        "startMs": 71380,
+        "endMs": 74710,
+        "text": "That's the link we will remember."
+      },
+      {
+        "startMs": 76600,
+        "endMs": 81090,
+        "text": "Positive inputs, zero to one,"
+      },
+      {
+        "startMs": 81320,
+        "endMs": 87260,
+        "text": "Beta and gamma, gently sung."
+      },
+      {
+        "startMs": 87900,
+        "endMs": 90480,
+        "text": "Beta em en, turn it round,"
+      },
+      {
+        "startMs": 90480,
+        "endMs": 94010,
+        "text": "Beta en em, same value found."
+      }
+    ],
+    "cueMethod": "Acoustic word alignment to this recording; approximate",
+    "timedLineCount": 20,
+    "suppliedLineCount": 20
   },
   {
     "topicId": 1001,
@@ -87,6 +827,159 @@
     "lyrics": "[Verse 1]\nDalton pictured matter small,\nTiny atoms building all.\nIn his model, atoms stay,\nChemical changes rearrange.\n\nSame element, he proposed,\nHas identical atoms in its rows.\nDifferent elements can combine,\nIn simple whole-number ratios every time.\n\n[Chorus]\nAtoms join, atoms rearrange,\nThat is how reactions change.\nNot created, not destroyed,\nIn chemical reactions they're conserved.\n\nCount the atoms, find the way,\nDalton's theory comes to play.\nSimple ratios, elements too,\nBuild a compound, something new.\n\n[Verse 2]\nA compound has a fixed proportion,\nAtoms joining in formation.\nDifferent elements, different kinds,\nThese were Dalton's starting signs.\n\n[Bridge]\nHis model helped explain the scene,\nBut modern science changed the dream.\nAtoms have smaller parts inside,\nAnd isotopes need not share one mass.\n\n[Final Chorus]\nAtoms join, atoms rearrange,\nThat is how reactions change.\nSimple ratios, fixed proportions,\nRemember Dalton's explanations.\n\n[Outro]\nA historic model, a starting view,\nThen came evidence, and science grew.",
     "assetPath": "demos/english_chem - usesuno.com.mp3",
     "shareUrl": "",
-    "sha256": "b8826a968cb89d7b0a392692f06bb9521710a74f0c96033a38327c076104d98d"
+    "sha256": "b8826a968cb89d7b0a392692f06bb9521710a74f0c96033a38327c076104d98d",
+    "cues": [
+      {
+        "startMs": 6720,
+        "endMs": 9730,
+        "text": "Dalton pictured matter small,"
+      },
+      {
+        "startMs": 10160,
+        "endMs": 12450,
+        "text": "Tiny atoms building all."
+      },
+      {
+        "startMs": 14140,
+        "endMs": 15110,
+        "text": "In his model, atoms stay,"
+      },
+      {
+        "startMs": 16840,
+        "endMs": 19570,
+        "text": "Chemical changes rearrange."
+      },
+      {
+        "startMs": 20020,
+        "endMs": 22490,
+        "text": "Same element, he proposed,"
+      },
+      {
+        "startMs": 22740,
+        "endMs": 25810,
+        "text": "Has identical atoms in its rows."
+      },
+      {
+        "startMs": 26040,
+        "endMs": 28210,
+        "text": "Different elements can combine,"
+      },
+      {
+        "startMs": 29140,
+        "endMs": 32160,
+        "text": "In simple whole-number ratios every time."
+      },
+      {
+        "startMs": 32160,
+        "endMs": 36100,
+        "text": "Atoms join, atoms rearrange,"
+      },
+      {
+        "startMs": 36100,
+        "endMs": 38680,
+        "text": "That is how reactions change."
+      },
+      {
+        "startMs": 38680,
+        "endMs": 41680,
+        "text": "Not created, not destroyed,"
+      },
+      {
+        "startMs": 41680,
+        "endMs": 45800,
+        "text": "In chemical reactions they're conserved."
+      },
+      {
+        "startMs": 45800,
+        "endMs": 48520,
+        "text": "Count the atoms, find the way,"
+      },
+      {
+        "startMs": 48520,
+        "endMs": 51620,
+        "text": "Dalton's theory comes to play."
+      },
+      {
+        "startMs": 51620,
+        "endMs": 55000,
+        "text": "Simple ratios, elements too,"
+      },
+      {
+        "startMs": 55000,
+        "endMs": 58490,
+        "text": "Build a compound, something new."
+      },
+      {
+        "startMs": 58540,
+        "endMs": 61490,
+        "text": "A compound has a fixed proportion,"
+      },
+      {
+        "startMs": 62000,
+        "endMs": 64450,
+        "text": "Atoms joining in formation."
+      },
+      {
+        "startMs": 65000,
+        "endMs": 67800,
+        "text": "Different elements, different kinds,"
+      },
+      {
+        "startMs": 67800,
+        "endMs": 71670,
+        "text": "These were Dalton's starting signs."
+      },
+      {
+        "startMs": 71760,
+        "endMs": 75200,
+        "text": "His model helped explain the scene,"
+      },
+      {
+        "startMs": 75200,
+        "endMs": 78850,
+        "text": "But modern science changed the dream."
+      },
+      {
+        "startMs": 79640,
+        "endMs": 81630,
+        "text": "Atoms have smaller parts inside,"
+      },
+      {
+        "startMs": 83760,
+        "endMs": 87460,
+        "text": "And isotopes need not share one mass."
+      },
+      {
+        "startMs": 87460,
+        "endMs": 91120,
+        "text": "Atoms join, atoms rearrange,"
+      },
+      {
+        "startMs": 91120,
+        "endMs": 93640,
+        "text": "That is how reactions change."
+      },
+      {
+        "startMs": 93640,
+        "endMs": 96940,
+        "text": "Simple ratios, fixed proportions,"
+      },
+      {
+        "startMs": 96940,
+        "endMs": 100040,
+        "text": "Remember Dalton's explanations."
+      },
+      {
+        "startMs": 100040,
+        "endMs": 104590,
+        "text": "A historic model, a starting view,"
+      },
+      {
+        "startMs": 106620,
+        "endMs": 114260,
+        "text": "Then came evidence, and science grew."
+      }
+    ],
+    "cueMethod": "Automatic word and segment timestamps matched to supplied lyrics; approximate"
   }
 ]

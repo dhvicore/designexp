@@ -3,6 +3,11 @@ package com.nmims.songstudio.ui
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -75,21 +80,21 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
     }
     BackHandler(page > 1) { if (!busy) goBack() }
 
-    Surface(Modifier.fillMaxSize(), color = Paper) {
+    StudioBackdrop {
         Column(Modifier.safeDrawingPadding().verticalScroll(rememberScrollState())
             .padding(horizontal = 24.dp, vertical = 20.dp), verticalArrangement = Arrangement.spacedBy(18.dp)) {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                Text("SAT / SONG STUDIO", style = MaterialTheme.typography.labelSmall)
+                StudioBrand()
                 TextButton(onClick = onLogout) { Text("Log out") }
             }
             if (page > 0) {
-                LinearProgressIndicator(progress = { page / 5f }, modifier = Modifier.fillMaxWidth(), color = Ink, trackColor = Lime)
+                LearningSteps(page)
                 Text("STEP $page OF 5  /  ${titles[page].uppercase()}", style = MaterialTheme.typography.labelSmall)
             }
             when (page) {
                 1 -> {
                     Text("What are we\nlearning, ${student.name.substringBefore(' ')}?", style = MaterialTheme.typography.headlineLarge)
-                    Panel(Lime) {
+                    Panel(Lavender) {
                         Text("YOUR AVAILABLE COURSE", style = MaterialTheme.typography.labelSmall)
                         Text(if (subject == "Chemistry") "Chemistry" else "Engineering Mathematics I", style = MaterialTheme.typography.titleLarge)
                         Text(if (subject == "Chemistry") "60 topics · English / Hindi / Marathi" else "Calculus · 702BS0C001")
@@ -112,7 +117,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                         Text(topic.explanations[language] ?: topic.concept)
                         Text(if (subject == "Chemistry") "Key terms: ${topic.formula}" else topic.formula, fontWeight = FontWeight.SemiBold)
                     }
-                    Button(onClick = { choosingSong = false; page = 2 }, modifier = Modifier.fillMaxWidth()) { Text("Choose your sound →") }
+                    Button(onClick = { choosingSong = false; page = 2 }, modifier = Modifier.fillMaxWidth().heightIn(min = 54.dp)) { Text("Choose your sound →") }
                 }
                 2 -> {
                     Text(if (choosingSong) "Choose a $category song." else "Choose your music category.", style = MaterialTheme.typography.headlineLarge)
@@ -216,7 +221,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     }
                     if (savedSunoDemo) {
                         SunoDemoPlayer(savedDemo!!)
-                        LyricsPanel(savedDemo!!.lyrics, "Words supplied for this saved song. Line highlighting is not synced to the audio yet.")
+                        if (savedDemo!!.cues.isEmpty()) LyricsPanel(savedDemo!!.lyrics, "Words supplied for this saved song. Line highlighting is not synced to the audio yet.")
                     } else {
                     val audioKey = listOf(student.id, topic.id, category, reference.title, tempo, focus, lyrics, useReference, if (useReference) melody?.sha else "original-v3").joinToString("\u0000")
                     val audioFile = remember(audioKey, audioRevision) { AudioFiles.file(context, audioKey) }
@@ -277,7 +282,10 @@ private fun LyricsPanel(lyrics: String, description: String = "Your prepared lyr
 
 @Composable
 fun Panel(color: androidx.compose.ui.graphics.Color, content: @Composable ColumnScope.() -> Unit) {
-    Column(Modifier.fillMaxWidth().background(color, RoundedCornerShape(22.dp)).padding(20.dp),
+    Column(Modifier.fillMaxWidth()
+        .shadow(8.dp, RoundedCornerShape(24.dp), ambientColor = Accent.copy(alpha = .10f), spotColor = Accent.copy(alpha = .10f))
+        .background(Brush.linearGradient(listOf(Color.White.copy(alpha = .98f), color.copy(alpha = .82f))), RoundedCornerShape(24.dp))
+        .border(1.dp, Color.White.copy(alpha = .9f), RoundedCornerShape(24.dp)).padding(22.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp), content = content)
 }
 
@@ -287,8 +295,8 @@ fun <T> Select(label: String, selected: T, values: List<T>, display: (T) -> Stri
     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
         Text(label, style = MaterialTheme.typography.labelLarge)
         Box {
-            OutlinedButton(onClick = { expanded = true }, modifier = Modifier.fillMaxWidth(),
-                contentPadding = PaddingValues(16.dp), shape = RoundedCornerShape(12.dp)) {
+            OutlinedButton(onClick = { expanded = true }, modifier = Modifier.fillMaxWidth().background(Color.White.copy(alpha = .75f), RoundedCornerShape(16.dp)),
+                contentPadding = PaddingValues(18.dp), shape = RoundedCornerShape(16.dp)) {
                 Text(display(selected), modifier = Modifier.weight(1f))
                 Text("⌄")
             }

@@ -1,6 +1,6 @@
 # Syllabus Song Studio — Android
 
-Kotlin / Jetpack Compose app with the complete 38-topic Calculus dataset.
+Kotlin / Jetpack Compose app with 38 Calculus topics and 60 Chemistry topics.
 Repository: https://github.com/dhvicore/designexp
 
 ## Run the offline demo first
@@ -14,7 +14,7 @@ Repository: https://github.com/dhvicore/designexp
 7. Tap **Try the activity →** for Step 5: blanks, formula selection and lesson ordering.
 
 These eight supplied Suno recordings are packaged in `app/src/main/assets/demos/`.
-They play offline in the native player; **Colab and the Mac server are not required**
+They play offline through the buffered Media3 player; **Colab and the Mac server are not required**
 for them. The read-along text comes from each MP3's supplied lyrics metadata.
 Only the mapped topic/category/song combination uses each recording. Editing a
 lyric draft does not change its saved audio. Exact named-song melody matching
@@ -30,10 +30,7 @@ all 38 Calculus topics, and gives feedback, scores and retry. Rolle and Beta hav
 curated understanding checks. Practice is currently in English. The prototype's
 bonus microphone/Whisper sing-back has not been ported.
 
-The last verification passed Android build/lint and six emulator tests, including
-selection routing/native playback for all eight recordings and quiz-data checks.
-All eight MP3 files also passed complete audio decoding. Playback tests establish
-technical playback, not musical fidelity or lyric intelligibility.
+Verification includes Android build/lint, native MP3 decoding/playback checks, three lyric-timing tests, and a Media3 playback test covering all nine bundled recordings with no reported audio underruns. Playback checks establish technical playback, not musical fidelity or lyric intelligibility.
 
 ## Optional experimental singing engine with Colab
 
@@ -299,3 +296,17 @@ has not been replaced by a score-controlled singing model in this change.
 ### Chemistry curriculum
 
 Chemistry is available alongside Calculus: 60 topics across six units and supplementary sections, with English, Hindi and Marathi lyrics, explanations, keywords and song references. Imported from Aman's commit `57c6500` in the original `design-experience` repository. Select Chemistry, then a unit/topic and language, prepare/edit the supplied lyrics, and complete the practice activity. Dalton’s Atomic Theory has a bundled English Suno recording with its embedded lyrics. Other Chemistry selections still need recordings or the configured music service. The eight bundled Calculus recordings remain available.
+
+
+### Timed lyrics
+
+The bundled English Dalton’s Atomic Theory recording has 30 line cues derived from its audio using local word/segment recognition. Read-along highlighting follows the native player clock, including pause, seek and replay; tapping a line seeks to it. Timing is approximate for sung words. All eight Calculus recordings also have their own acoustic line timings. The one-minute Rolle Hindi dance file ends during its final refrain; unsung remainder lines stay available in full lyrics without invented timestamps. The original MP3 is unchanged. `tools/time_saved_lyrics.py` is an optional desktop authoring tool, not an Android or server dependency.
+
+
+### Frontend and local playback updates
+
+The app uses the bundled OFL-licensed Outfit font, cream/lime/lavender gradients, original forest-green header artwork and five-step progress navigation. The duplicate saved-song information card has been removed. Media3 plays the original local MP3s with larger audio buffers; lyric cues use its playback clock. No speech recognition or lyric processing runs during Android playback.
+
+For the Mac emulator, hardware graphics reduced the audio timing spikes observed with SwiftShader software rendering. If your emulator has similar crackling, select hardware graphics in its device settings and cold-boot without wiping data. The local demo uses `Pixel_10a` with `hw.gpu.mode=host` and unused microphone input disabled (`hw.audioInput=no`). These are emulator settings, not macOS sound changes or APK requirements. A normal cold boot preserves app data; do not choose Wipe Data.
+
+Optional timing-authoring tools under `tools/` require faster-whisper, NumPy and imageio-ffmpeg on the desktop. They need local Whisper models and output candidate reports for review; model weights and temporary reports are not committed. Android only reads the exported catalog cues. Approximate timings may need listening corrections, and lyrics absent from a shortened recording are not assigned invented timings.

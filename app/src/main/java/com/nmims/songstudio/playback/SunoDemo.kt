@@ -16,7 +16,7 @@ import java.io.FileNotFoundException
 
 data class SavedSunoSong(
     val topicId: Int, val category: String, val songId: String, val title: String,
-    val assetPath: String, val lyrics: String, val shareUrl: String
+    val assetPath: String, val lyrics: String, val shareUrl: String, val cues: List<LyricCue> = emptyList()
 )
 
 /** Only the explicitly supplied recordings are eligible for saved-song playback. */
@@ -25,8 +25,13 @@ object SunoDemo {
         val rows = org.json.JSONArray(context.assets.open("demos/catalog.json").bufferedReader().use { it.readText() })
         return (0 until rows.length()).map { index ->
             val r = rows.getJSONObject(index)
+            val timings = r.optJSONArray("cues")
+            val cues = if (timings == null) emptyList() else (0 until timings.length()).map { n ->
+                val cue = timings.getJSONObject(n)
+                LyricCue(cue.getInt("startMs"), cue.getInt("endMs"), cue.getString("text"))
+            }
             SavedSunoSong(r.getInt("topicId"), r.getString("category"), r.getString("songId"),
-                r.getString("title"), r.getString("assetPath"), r.getString("lyrics"), r.optString("shareUrl"))
+                r.getString("title"), r.getString("assetPath"), r.getString("lyrics"), r.optString("shareUrl"), cues)
         }
     }
 
@@ -55,11 +60,6 @@ fun SunoDemoPlayer(song: SavedSunoSong) {
         catch (_: Exception) { error = "The saved demo audio could not be opened." }
         finally { checking = false }
     }
-    Panel(Lavender) {
-        Text("SAVED SUNO DEMO", style = MaterialTheme.typography.labelSmall)
-        Text(song.title, style = MaterialTheme.typography.titleLarge)
-        Text("Saved recording for this topic and music selection. Exact melody matching has not been verified.")
-        Text("Editing your lyric draft does not change this recording.", style = MaterialTheme.typography.bodySmall)
         if (checking) Text("Checking for saved audio…")
         else if (audio == null) Text("Listen online using Suno’s player. Offline audio has not been added yet.")
         if (error.isNotBlank()) Text(error, color = MaterialTheme.colorScheme.error)
@@ -70,6 +70,5 @@ fun SunoDemoPlayer(song: SavedSunoSong) {
         }, modifier = Modifier.fillMaxWidth()) { Text("Listen on Suno ↗") }
         Text("Opens Suno or your browser; internet is required.", style = MaterialTheme.typography.bodySmall)
         }
-    }
-    audio?.let { SongPlayer(it, 0, "Saved Suno demo recording. Plays on this device without Colab.") }
+    audio?.let { SongPlayer(it, 0, "Saved Suno demo recording. Plays on this device without Colab.", song.cues, song.lyrics) }
 }

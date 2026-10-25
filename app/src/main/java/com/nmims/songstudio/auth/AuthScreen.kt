@@ -16,6 +16,10 @@ import androidx.compose.ui.unit.dp
 import com.nmims.songstudio.ui.Lime
 import com.nmims.songstudio.ui.Panel
 import com.nmims.songstudio.ui.Paper
+import com.nmims.songstudio.ui.StudioBackdrop
+import com.nmims.songstudio.ui.StudioBrand
+import com.nmims.songstudio.ui.StudioHero
+import androidx.compose.ui.graphics.Color
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -36,13 +40,15 @@ fun AuthScreen(onLogin: (Student) -> Unit) {
     var error by remember { mutableStateOf("") }
     var message by remember { mutableStateOf("") }
     DisposableEffect(store) { onDispose { store.close() } }
-    Surface(Modifier.fillMaxSize(), color = Paper) {
+    StudioBackdrop {
         Column(Modifier.safeDrawingPadding().verticalScroll(rememberScrollState()).padding(24.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)) {
-            Text("SAT / SONG STUDIO", style = MaterialTheme.typography.labelSmall)
-            Spacer(Modifier.height(16.dp))
-            Text(if (signup) "Your learning.\nYour soundtrack." else "Welcome back.\nFind your rhythm.", style = MaterialTheme.typography.headlineLarge)
-            Text("Music-based learning for NMIMS students")
+            StudioHero(
+                if (signup) "Your learning.\nYour soundtrack." else "Welcome back.\nFind your rhythm.",
+                "Music-based learning for NMIMS students"
+            )
+            Panel(Paper) {
+            Text(if (signup) "Create your account" else "Sign in to your studio", style = MaterialTheme.typography.titleMedium)
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 FilterChip(selected = !signup, enabled = !busy, onClick = { signup = false; error = ""; password = ""; confirmation = "" }, label = { Text("Log in") })
                 FilterChip(selected = signup, enabled = !busy, onClick = { signup = true; error = ""; message = ""; password = ""; confirmation = "" }, label = { Text("Sign up") })
@@ -58,7 +64,7 @@ fun AuthScreen(onLogin: (Student) -> Unit) {
                 visualTransformation = PasswordVisualTransformation(), keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password, autoCorrectEnabled = false, capitalization = androidx.compose.ui.text.input.KeyboardCapitalization.None), modifier = Modifier.fillMaxWidth())
             if (error.isNotEmpty()) Text(error, color = MaterialTheme.colorScheme.error)
             if (message.isNotEmpty()) Text(message)
-            Button(enabled = !busy && email.isNotBlank() && password.isNotBlank(), modifier = Modifier.fillMaxWidth(), onClick = {
+            Button(enabled = !busy && email.isNotBlank() && password.isNotBlank(), modifier = Modifier.fillMaxWidth().heightIn(min = 54.dp), onClick = {
                 error = ""; message = ""
                 if (signup && password != confirmation) { error = "Passwords do not match." }
                 else {
@@ -79,9 +85,10 @@ fun AuthScreen(onLogin: (Student) -> Unit) {
                     }
                 }
             }) { Text(if (busy) "Please wait…" else if (signup) "Create account" else "Log in →") }
+            }
             Panel(Lime) {
-                Text("CALCULUS IS READY", style = MaterialTheme.typography.labelSmall)
-                Text("5 units · 38 topics · your choice of music")
+                Text("YOUR STUDY PLAYLIST STARTS HERE", style = MaterialTheme.typography.labelSmall)
+                Text("Calculus + Chemistry · 98 topics to explore")
             }
             Text("Accounts and your last email are saved on this device. Enter your password when you return. College SAP portal verification is not connected.", style = MaterialTheme.typography.bodySmall)
         }
