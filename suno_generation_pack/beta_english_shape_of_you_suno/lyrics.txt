@@ -1,0 +1,27 @@
+[Verse]
+Em and en are greater than zero,
+Zero to one is where we go.
+Integrate ex to em minus one,
+Times one minus ex to en minus one,
+With respect to ex, and we're done.
+We call this Euler's first integral.
+
+[Chorus]
+Beta, beta, em and en,
+Swap the order, same again.
+Beta em en, beta en em,
+Same two inputs, switch them round again.
+
+[Bridge]
+Gamma em times gamma en,
+Over gamma of em plus en.
+That's the beta link we know,
+Let the gamma rhythm flow.
+
+[Outro]
+For positive whole em and en,
+Em minus one factorial, then
+Times en minus one factorial,
+Over em plus en minus one factorial.
+Beta, beta, em and en,
+Swap the order, same again.

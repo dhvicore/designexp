@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "rolle_hindi_kala_chashma_suno.mp3",
+    "topicId": 0,
+    "category": "Hindi",
+    "songId": "kala-chashma",
+    "title": "Rolle’s Theorem — Hindi dance",
+    "referenceLabel": "Kala Chashma",
+    "melodyFidelity": "unverified; style prompt only",
+    "lyrics": "[Verse]\nबंद अंतराल ए से बी,\nफलन सतत हो, बात यही।\nखुले अंतराल के भीतर,\nअवकलज हो हर बिंदु पर।\n\n[Pre-Chorus]\nदोनों सिरों के मान समान,\nतीनों शर्तें रख लो ध्यान।\n\n[Chorus]\nढलान शून्य, याद रहे,\nरोल का नियम ये बात कहे।\nए और बी के बीच कहीं,\nकम से कम एक सी है यहीं।\nउस सी पर अवकलज शून्य,\nरोल का नियम, याद रखो यूँ।\n\n[Bridge]\nस्पर्श रेखा क्षैतिज होगी,\nतीन शर्तों से बात बनेगी।\n\n[Chorus]\nढलान शून्य, याद रहे,\nरोल का नियम ये बात कहे।\nए और बी के बीच कहीं,\nकम से कम एक सी है यहीं।",
+    "style": "Hindi Punjabi dance-pop, 112 BPM, dhol and tumbi accents, bouncy bass, handclaps. Joyful natural lead vocal with crisp Hindi pronunciation, short rhythmic phrases, catchy repeated hook. Vocals clearly above restrained backing. Sing all supplied educational words; give longer maths lines two bars. Short intro, about 60–90 seconds, finish the final chorus. No robotic effects or obscuring choir.",
+    "status": "awaiting user generation and listening"
+  },
+  {
+    "filename": "rolle_bhajan_raghupati_suno.mp3",
+    "topicId": 0,
+    "category": "Bhajan",
+    "songId": "raghupati-raghav-raja-ram",
+    "title": "Rolle’s Theorem — Hindi/Sanskrit bhajan",
+    "referenceLabel": "Raghupati Raghav Raja Ram",
+    "melodyFidelity": "unverified; style prompt only",
+    "lyrics": "[Invocation]\nॐ सरस्वत्यै नमः,\nविद्या देहि, ज्ञानं देहि।\n\n[Verse]\nबंद अंतराल ए से बी पर,\nफलन सतत बना रहे।\nखुले अंतराल के हर बिंदु पर,\nउसका अवकलज मौजूद रहे।\nदोनों सिरों के मान बराबर,\nतीनों शर्तें याद रहें।\n\n[Chorus]\nज्ञान का दीप जलाएँ,\nरोल का नियम हम गाएँ।\nए से बड़ा, बी से छोटा,\nकम से कम एक सी पाएँ।\nउस सी पर अवकलज शून्य,\nक्षैतिज स्पर्श रेखा पाएँ।\n\n[Outro]\nतीनों शर्तें पहले देखें,\nफिर निष्कर्ष को अपनाएँ।\nॐ सरस्वत्यै नमः,\nरोल का नियम दोहराएँ।",
+    "style": "Traditional gentle Hindi bhajan, 78 BPM, harmonium, tabla, tanpura and soft manjira. Reverent natural lead singer with clear Sanskrit invocation and fully intelligible Hindi lesson words. Simple recurring devotional refrain, restrained call-and-response only after the lead phrase. Give mathematical conditions two bars each. About 60–90 seconds. No pop drop, vocoder, robotic chant or long instrumental breaks.",
+    "status": "awaiting user generation and listening"
+  },
+  {
+    "filename": "rolle_lofi_perfect_suno.mp3",
+    "topicId": 0,
+    "category": "Lo-fi",
+    "songId": "perfect",
+    "title": "Rolle’s Theorem — English lo-fi",
+    "referenceLabel": "Perfect",
+    "melodyFidelity": "unverified; style prompt only",
+    "lyrics": "[Verse]\nOn the closed span, A to B,\nContinuous, no breaks to see.\nAt every point that's tucked inside,\nA derivative must reside.\n\n[Pre-Chorus]\nThe endpoint values are the same,\nThree conditions frame the claim.\n\n[Chorus]\nSomewhere inside, we'll find a see,\nStrictly between our A and B.\nAt least one point, the slope is zero,\nA horizontal tangent shows.\nRoll's theorem, let it show,\nThere's a point with zero slope.\n\n[Outro]\nClosed span, no breaks; inside, a slope,\nEqual ends complete our scope.\nAt least one see lies in between,\nA zero slope upon the scene.",
+    "style": "English lo-fi acoustic ballad, 72 BPM, gentle six-eight sway, fingerpicked guitar, warm electric piano, soft bass and brushed percussion. Close natural lead vocal, clearly sung rather than whispered or spoken. Short melodic lines with breathing space; understated tender refrain. Lyrics prominent, minimal reverb, subtle tape warmth only on instruments. About 60–90 seconds, complete every supplied verse. No robotic vocal processing.",
+    "status": "awaiting user generation and listening"
+  },
+  {
+    "filename": "beta_english_shape_of_you_suno.mp3",
+    "topicId": 17,
+    "category": "English",
+    "songId": "shape-of-you",
+    "title": "Beta Function — English pop",
+    "referenceLabel": "Shape of You",
+    "melodyFidelity": "unverified; style prompt only",
+    "lyrics": "[Verse]\nEm and en are greater than zero,\nZero to one is where we go.\nIntegrate ex to em minus one,\nTimes one minus ex to en minus one,\nWith respect to ex, and we're done.\nWe call this Euler's first integral.\n\n[Chorus]\nBeta, beta, em and en,\nSwap the order, same again.\nBeta em en, beta en em,\nSame two inputs, switch them round again.\n\n[Bridge]\nGamma em times gamma en,\nOver gamma of em plus en.\nThat's the beta link we know,\nLet the gamma rhythm flow.\n\n[Outro]\nFor positive whole em and en,\nEm minus one factorial, then\nTimes en minus one factorial,\nOver em plus en minus one factorial.\nBeta, beta, em and en,\nSwap the order, same again.",
+    "style": "English rhythmic tropical pop, 96 BPM, plucked mallet hook, muted guitar, warm bass and light syncopated drums. Clear natural lead singer with precise English diction. Short catchy question-and-answer phrases; let equation lines span two bars. Pronounce beta as bay-tuh, gamma as gam-uh, M as em, N as en, X as ex. Sing supplied lyrics exactly, vocals forward, about 75–100 seconds, no invented words or robotic effects.",
+    "status": "awaiting user generation and listening"
+  },
+  {
+    "filename": "beta_hindi_chaiyya_chaiyya_suno.mp3",
+    "topicId": 17,
+    "category": "Hindi",
+    "songId": "chaiyya-chaiyya",
+    "title": "Beta Function — Hindi folk dance",
+    "referenceLabel": "Chaiyya Chaiyya",
+    "melodyFidelity": "unverified; style prompt only",
+    "lyrics": "[Verse]\nएम और एन धनात्मक हों,\nशून्य से एक सीमाएँ हों।\nएक्स की घात एम ऋण एक,\nएक ऋण एक्स की घात एन ऋण एक।\nदोनों का गुणन समाकलित करो,\nएक्स के सापेक्ष आगे बढ़ो।\n\n[Chorus]\nबीटा, बीटा, याद रहे,\nऑयलर का पहला समाकल कहे।\nएम और एन को बदल के देखो,\nबीटा का मान वही तुम देखो।\n\n[Bridge]\nऊपर गामा एम से गामा एन गुणा,\nएम और एन का योग बनाओ।\nउस योग का गामा नीचे रखकर,\nभाग से बीटा का मान तुम पाओ।\n\n[Chorus]\nबीटा, बीटा, याद रहे,\nएम और एन धनात्मक रहें।\nशून्य से एक तक बात कहो,\nक्रम बदलो, मान वही पाओ।",
+    "style": "Hindi Sufi-folk dance, 106 BPM, rolling train-like percussion, dholak, warm bass, harmonium and handclaps. Strong natural melodic lead, clear Hindi articulation, lively repeated response hook. Mathematical definition lines need two bars and a breathing gap; do not compress or rap them. About 75–100 seconds, vocals prominent, complete the ending. Pronounce बीटा, गामा, एम, एन, एक्स distinctly; no robotic processing.",
+    "status": "awaiting user generation and listening"
+  },
+  {
+    "filename": "beta_bhajan_om_jai_suno.mp3",
+    "topicId": 17,
+    "category": "Bhajan",
+    "songId": "om-jai-jagdish-hare",
+    "title": "Beta Function — Hindi/Sanskrit aarti",
+    "referenceLabel": "Om Jai Jagdish Hare",
+    "melodyFidelity": "unverified; style prompt only",
+    "lyrics": "[Invocation]\nॐ सरस्वत्यै नमः,\nज्ञान का दीप जलाएँ।\n\n[Verse]\nएम और एन धनात्मक लेकर,\nबीटा का रूप बताएँ।\nशून्य से एक की सीमा में,\nसमाकल हम अपनाएँ।\nएक्स की घात एम ऋण एक,\nएक ऋण एक्स की घात एन ऋण एक।\nदोनों का गुणन लेकर,\nएक्स के सापेक्ष समाकल लें।\n\n[Chorus]\nबीटा का गुण गाएँ,\nक्रम बदल, वही मान पाएँ।\nएम और एन हों, एन और एम हों,\nएक ही मान को पाएँ।\n\n[Bridge]\nगामा एम और गामा एन का,\nगुणन ऊपर आए।\nनीचे गामा एम और एन के योग का,\nभाग से बीटा पाएँ।\n\n[Outro]\nॐ सरस्वत्यै नमः,\nसीखें और दोहराएँ।",
+    "style": "Hindi devotional aarti, 76 BPM, harmonium, soft tabla, manjira and sustained tanpura. Reverent flowing melody, natural lead voice, Sanskrit invocation followed by clearly sung Hindi mathematics. Simple recurring congregational response, backing singers quiet. Allow two bars for each equation phrase. About 75–100 seconds, no rushed syllables, no synthetic choir or electronic vocal effects.",
+    "status": "awaiting user generation and listening"
+  },
+  {
+    "filename": "beta_lofi_sunflower_suno.mp3",
+    "topicId": 17,
+    "category": "Lo-fi",
+    "songId": "sunflower",
+    "title": "Beta Function — English lo-fi R&B",
+    "referenceLabel": "Sunflower",
+    "melodyFidelity": "unverified; style prompt only",
+    "lyrics": "[Verse]\nEm and en, both positive,\nA quiet space to integrate.\nFrom zero up to one we go,\nLet the beta lesson flow.\n\n[Verse]\nEx to the power em minus one,\nTimes one minus ex to en minus one.\nIntegrate with respect to ex,\nThat's our beta, step by step.\n\n[Chorus]\nBeta em en, turn it round,\nBeta en em, same value found.\nSwap the inputs, let them flow,\nSymmetry is what we know.\n\n[Bridge]\nGamma em times gamma en,\nOver gamma of em plus en.\nKeep the sum inside that gamma,\nThat's the link we will remember.\n\n[Outro]\nPositive inputs, zero to one,\nBeta and gamma, gently sung.\nBeta em en, turn it round,\nBeta en em, same value found.",
+    "style": "English melodic lo-fi R&B, 78 BPM, warm Rhodes piano, rounded bass, muted guitar and gentle swung drums. Relaxed natural lead singing with crisp consonants, an understated memorable refrain, no whispered or spoken maths. Leave two bars for long equation lines and a short rest between statements. Pronounce beta bay-tuh, gamma gam-uh, M em, N en, X ex. About 75–100 seconds; vocals above the beat, no robotic effects or intrusive vinyl noise.",
+    "status": "awaiting user generation and listening"
+  }
+]

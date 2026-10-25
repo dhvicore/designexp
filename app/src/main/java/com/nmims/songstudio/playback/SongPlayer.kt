@@ -19,7 +19,7 @@ import kotlinx.coroutines.delay
 import java.io.File
 
 @Composable
-fun SongPlayer(file: File, revision: Int) {
+fun SongPlayer(file: File, revision: Int, caption: String = "Vocals and music created from your educational lyrics.") {
     val context = LocalContext.current
     val audioManager = remember { context.getSystemService(Context.AUDIO_SERVICE) as AudioManager }
     var mediaVolume by remember { mutableIntStateOf(audioManager.getStreamVolume(AudioManager.STREAM_MUSIC)) }
@@ -59,7 +59,7 @@ fun SongPlayer(file: File, revision: Int) {
     Panel(Lime) {
         Text("YOUR GENERATED SONG", style = MaterialTheme.typography.labelSmall)
         Text("Ready to listen", style = MaterialTheme.typography.titleLarge)
-        Text("Vocals and music created from your educational lyrics.", style = MaterialTheme.typography.bodySmall)
+        Text(caption, style = MaterialTheme.typography.bodySmall)
         if (error.isNotBlank()) Text(error, color = MaterialTheme.colorScheme.error)
         Text("Device media volume: ${mediaVolume * 100 / maxVolume}%", style = MaterialTheme.typography.bodySmall)
         OutlinedButton(onClick = {

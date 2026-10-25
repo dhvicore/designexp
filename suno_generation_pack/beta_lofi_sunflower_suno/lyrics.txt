@@ -1,0 +1,29 @@
+[Verse]
+Em and en, both positive,
+A quiet space to integrate.
+From zero up to one we go,
+Let the beta lesson flow.
+
+[Verse]
+Ex to the power em minus one,
+Times one minus ex to en minus one.
+Integrate with respect to ex,
+That's our beta, step by step.
+
+[Chorus]
+Beta em en, turn it round,
+Beta en em, same value found.
+Swap the inputs, let them flow,
+Symmetry is what we know.
+
+[Bridge]
+Gamma em times gamma en,
+Over gamma of em plus en.
+Keep the sum inside that gamma,
+That's the link we will remember.
+
+[Outro]
+Positive inputs, zero to one,
+Beta and gamma, gently sung.
+Beta em en, turn it round,
+Beta en em, same value found.

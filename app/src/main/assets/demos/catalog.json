@@ -1,0 +1,82 @@
+[
+  {
+    "topicId": 0,
+    "category": "English",
+    "songId": "levitating",
+    "title": "Rolle’s Theorem — English",
+    "lyrics": "[Chorus]\nOn closed\nInterval\nNo breaks found\nSlope exists each point inside\nEqual ends\nThree conditions hold\nSome see lies just in between\nZero slope\nHere at see\nThere's at least one point within\nFlat tangent\nRoll's theorem holds true\nThese three rules apply",
+    "assetPath": "demos/rolle_levitating_suno.mp3",
+    "shareUrl": "https://suno.com/s/ahgu88j3c2ZXX83y",
+    "sha256": "ebd0777ae385d5f680541b0313d4e480d12dbf9eb6abf95929fbb9fec27c1070"
+  },
+  {
+    "topicId": 0,
+    "category": "Hindi",
+    "songId": "kala-chashma",
+    "title": "Rolle’s Theorem — Hindi dance",
+    "lyrics": "Verse]\nबंद अंतराल ए से बी,\nफलन सतत हो, बात यही।\nखुले अंतराल के भीतर,\nअवकलज हो हर बिंदु पर।\n\nदोनों सिरों के मान समान,\nतीनों शर्तें रख लो ध्यान।\n\nढलान शून्य, याद रहे,\nरोल का नियम ये बात कहे।\nए और बी के बीच कहीं,\nकम से कम एक सी है यहीं।\nउस सी पर अवकलज शून्य,\nरोल का नियम, याद रखो यूँ।\n\nस्पर्श रेखा क्षैतिज होगी,\nतीन शर्तों से बात बनेगी।\n\nढलान शून्य, याद रहे,\nरोल का नियम ये बात कहे।\nए और बी के बीच कहीं,\nकम से कम एक सी है यहीं।",
+    "assetPath": "demos/rolle_hindi_kala_chashma_suno.mp3",
+    "shareUrl": "",
+    "sha256": "19a38d3db479a5493f1eca9092a489b51661c2b3c9e920ae4a0fea122b88f9c7"
+  },
+  {
+    "topicId": 0,
+    "category": "Bhajan",
+    "songId": "raghupati-raghav-raja-ram",
+    "title": "Rolle’s Theorem — Hindi/Sanskrit bhajan",
+    "lyrics": "[Invocation]\nॐ सरस्वत्यै नमः,\nविद्या देहि, ज्ञानं देहि।\n\nबंद अंतराल ए से बी पर,\nफलन सतत बना रहे।\nखुले अंतराल के हर बिंदु पर,\nउसका अवकलज मौजूद रहे।\nदोनों सिरों के मान बराबर,\nतीनों शर्तें याद रहें।\n\nज्ञान का दीप जलाएँ,\nरोल का नियम हम गाएँ।\nए से बड़ा, बी से छोटा,\nकम से कम एक सी पाएँ।\nउस सी पर अवकलज शून्य,\nक्षैतिज स्पर्श रेखा पाएँ।\n\nतीनों शर्तें पहले देखें,\nफिर निष्कर्ष को अपनाएँ।\nॐ सरस्वत्यै नमः,\nरोल का नियम दोहराएँ।",
+    "assetPath": "demos/rolle_bhajan_raghupati_suno.mp3",
+    "shareUrl": "",
+    "sha256": "f87acd4de77821d9c81e1ace4ff1c7c549113ce5f89633834312651a221548e6"
+  },
+  {
+    "topicId": 0,
+    "category": "Lo-fi",
+    "songId": "perfect",
+    "title": "Rolle’s Theorem — English lo-fi",
+    "lyrics": "[Verse]\nOn the closed span, A to B,\nContinuous, no breaks to see.\nAt every point that's tucked inside,\nA derivative must reside.\n\nThe endpoint values are the same,\nThree conditions frame the claim.\n\nSomewhere inside, we'll find a see,\nStrictly between our A and B.\nAt least one point, the slope is zero,\nA horizontal tangent shows.\nRoll's theorem, let it show,\nThere's a point with zero slope.\n\nClosed span, no breaks; inside, a slope,\nEqual ends complete our scope.\nAt least one see lies in between,\nA zero slope upon the scene.\n```",
+    "assetPath": "demos/rolle_lofi_perfect_suno.mp3",
+    "shareUrl": "",
+    "sha256": "4200ba35cc1456f84fc20d84983fac4e55c1ec9b8c83991e79d96ad6caf40ae6"
+  },
+  {
+    "topicId": 17,
+    "category": "English",
+    "songId": "shape-of-you",
+    "title": "Beta Function — English pop",
+    "lyrics": "[Verse]\nEm and en are greater than zero,\nZero to one is where we go.\nIntegrate ex to em minus one,\nTimes one minus ex to en minus one,\nWith respect to ex, and we're done.\nWe call this Euler's first integral.\n\nBeta, beta, em and en,\nSwap the order, same again.\nBeta em en, beta en em,\nSame two inputs, switch them round again.\n\nGamma em times gamma en,\nOver gamma of em plus en.\nThat's the beta link we know,\nLet the gamma rhythm flow.\n\nFor positive whole em and en,\nEm minus one factorial, then\nTimes en minus one factorial,\nOver em plus en minus one factorial.\nBeta, beta, em and en,\nSwap the order, same again.",
+    "assetPath": "demos/beta_english_shape_of_you_suno.mp3",
+    "shareUrl": "",
+    "sha256": "cdf5e8e06a5a188a158ee2e6bb7fe89c0cd375d8d79784898d2b1e62178f7210"
+  },
+  {
+    "topicId": 17,
+    "category": "Hindi",
+    "songId": "chaiyya-chaiyya",
+    "title": "Beta Function — Hindi folk dance",
+    "lyrics": "```text\nएम और एन धनात्मक हों,\nशून्य से एक सीमाएँ हों।\nएक्स की घात एम ऋण एक,\nएक ऋण एक्स की घात एन ऋण एक।\nदोनों का गुणन समाकलित करो,\nएक्स के सापेक्ष आगे बढ़ो।\n\nबीटा, बीटा, याद रहे,\nऑयलर का पहला समाकल कहे।\nएम और एन को बदल के देखो,\nबीटा का मान वही तुम देखो।\n\nऊपर गामा एम से गामा एन गुणा,\nएम और एन का योग बनाओ।\nउस योग का गामा नीचे रखकर,\nभाग से बीटा का मान तुम पाओ।\n\nबीटा, बीटा, याद रहे,\nएम और एन धनात्मक रहें।\nशून्य से एक तक बात कहो,\nक्रम बदलो, मान वही पाओ।",
+    "assetPath": "demos/beta_hindi_chaiyya_chaiyya_suno.mp3",
+    "shareUrl": "",
+    "sha256": "eb1b40e7ee295b330ed65ad8fc72da38ec8a5399eed752fe2c63470e2386cefc"
+  },
+  {
+    "topicId": 17,
+    "category": "Bhajan",
+    "songId": "om-jai-jagdish-hare",
+    "title": "Beta Function — Hindi/Sanskrit aarti",
+    "lyrics": "[Invocation]\nॐ सरस्वत्यै नमः,\nज्ञान का दीप जलाएँ।\n\nएम और एन धनात्मक लेकर,\nबीटा का रूप बताएँ।\nशून्य से एक की सीमा में,\nसमाकल हम अपनाएँ।\nएक्स की घात एम ऋण एक,\nएक ऋण एक्स की घात एन ऋण एक।\nदोनों का गुणन लेकर,\nएक्स के सापेक्ष समाकल लें।\n\nबीटा का गुण गाएँ,\nक्रम बदल, वही मान पाएँ।\nएम और एन हों, एन और एम हों,\nएक ही मान को पाएँ।\n\nगामा एम और गामा एन का,\nगुणन ऊपर आए।\nनीचे गामा एम और एन के योग का,\nभाग से बीटा पाएँ।\n\nॐ सरस्वत्यै नमः,\nसीखें और दोहराएँ।",
+    "assetPath": "demos/beta_bhajan_om_jai_suno.mp3",
+    "shareUrl": "",
+    "sha256": "3616c0adfbdc69c0dfcd843da620d0226f38287a52dbeee9fcd578ddc97e82b9"
+  },
+  {
+    "topicId": 17,
+    "category": "Lo-fi",
+    "songId": "sunflower",
+    "title": "Beta Function — English lo-fi R&B",
+    "lyrics": "```text\nEm and en, both positive,\nA quiet space to integrate.\nFrom zero up to one we go,\nLet the beta lesson flow.\n\nEx to the power em minus one,\nTimes one minus ex to en minus one.\nIntegrate with respect to ex,\nThat's our beta, step by step.\n\nBeta em en, turn it round,\nBeta en em, same value found.\nSwap the inputs, let them flow,\nSymmetry is what we know.\n\nGamma em times gamma en,\nOver gamma of em plus en.\nKeep the sum inside that gamma,\nThat's the link we will remember.\n\nPositive inputs, zero to one,\nBeta and gamma, gently sung.\nBeta em en, turn it round,\nBeta en em, same value found.\n```",
+    "assetPath": "demos/beta_lofi_sunflower_suno.mp3",
+    "shareUrl": "",
+    "sha256": "cbeb54f367f8a50f67b0a823fe648653415792cbfc8465653283c11fb7686491"
+  }
+]

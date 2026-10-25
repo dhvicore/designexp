@@ -1,11 +1,43 @@
 # Syllabus Song Studio — Android
 
 Kotlin / Jetpack Compose app with the complete 38-topic Calculus dataset.
-Repository: https://github.com/dhvicore/design-experience
+Repository: https://github.com/dhvicore/designexp
 
-## Start the singing engine with Colab
+## Run the offline demo first
 
-1. Open [the GPU notebook](https://colab.research.google.com/github/dhvicore/design-experience/blob/main/notebooks/Calculus_Singing_GPU.ipynb).
+1. Clone `https://github.com/dhvicore/designexp.git` and open its root folder in Android Studio.
+2. Let Gradle sync; use SDK 36 and Android Studio's bundled JDK.
+3. Run the `app` configuration on an Android emulator. Sign up on that device, then log in.
+4. Choose **Unit 1 → Rolle’s Theorem** or **Unit 3 → Beta Function**.
+5. Choose **Hindi, English, Bhajan or Lo-fi**. The saved recording is the first recommendation.
+6. Tap **Load saved song lyrics → Continue to song → Play song**.
+7. Tap **Try the activity →** for Step 5: blanks, formula selection and lesson ordering.
+
+These eight supplied Suno recordings are packaged in `app/src/main/assets/demos/`.
+They play offline in the native player; **Colab and the Mac server are not required**
+for them. The read-along text comes from each MP3's supplied lyrics metadata.
+Only the mapped topic/category/song combination uses each recording. Editing a
+lyric draft does not change its saved audio. Exact named-song melody matching
+remains unfinished; do not present these recordings as verified exact covers.
+
+| Topic | English | Hindi | Bhajan | Lo-fi |
+|---|---|---|---|---|
+| Rolle’s Theorem | Levitating | Kala Chashma | Raghupati Raghav Raja Ram | Perfect |
+| Beta Function | Shape of You | Chaiyya Chaiyya | Om Jai Jagdish Hare | Sunflower |
+
+Step 5 adapts the existing Python prototype's activity types, works offline for
+all 38 Calculus topics, and gives feedback, scores and retry. Rolle and Beta have
+curated understanding checks. Practice is currently in English. The prototype's
+bonus microphone/Whisper sing-back has not been ported.
+
+The last verification passed Android build/lint and six emulator tests, including
+selection routing/native playback for all eight recordings and quiz-data checks.
+All eight MP3 files also passed complete audio decoding. Playback tests establish
+technical playback, not musical fidelity or lyric intelligibility.
+
+## Optional experimental singing engine with Colab
+
+1. Open [the GPU notebook](https://colab.research.google.com/github/dhvicore/designexp/blob/main/notebooks/Calculus_Singing_GPU.ipynb).
 2. Choose **Runtime → Change runtime type → T4 GPU**.
 3. Run cells 1 and 2. Dependencies and several GB of weights download on the first run.
    Cell 2 sets Matplotlib to `Agg` and enables float32 for the T4 run. The pinned
@@ -20,7 +52,7 @@ Repository: https://github.com/dhvicore/design-experience
    and the Colab runtime open. The bridge binds only to the Mac's loopback address.
 7. Run the Android app on the emulator. Log in, select a topic, choose music,
    create/review lyrics and press **Generate song**. After completion, press Play.
-   For the tested melody demo: **Unit 1 → Rolle’s Theorem → Bhajan →
+   For the experimental melody workflow: **Unit 1 → Rolle’s Theorem → Bhajan →
    Raghupati Raghav Raja Ram → Follow melody → Generate lyric draft →
    Continue to song → Generate song → Play song**. Use Browse all if needed.
 
@@ -68,8 +100,8 @@ networking and a production-hosted backend are not configured.
   the page; there is no timed highlighting or automatic line tracking yet.
 - The app submits real generation jobs, polls progress, downloads completed audio,
   and plays it with pause/seek/replay. Failure is shown as failure, not fake success.
-- The old import screen, prompt-copy controls, Twinkle recordings and example-song
-  playback have been removed.
+- The old import screen, prompt-copy controls and Twinkle recordings have been removed.
+  Eight explicitly labelled saved Suno demos are available through the offline flow above.
 
 ## Important generation distinction
 
@@ -151,7 +183,8 @@ python3 -m unittest discover -v
 
 Emulator tests cover persistent accounts, invalid login/signup, background logout,
 rotation, all Calculus units, music recommendations, lyric variations and native
-playback. Audio playback tests use a generated test signal, not a produced song.
+playback. The batch test plays each of the eight supplied Suno recordings, pauses,
+seeks near the end and verifies completion. The older import tests use a test signal.
 Python adapter tests mock the GPU service to check authentication headers, job
 polling, error handling and reference uploads. These are not proof of live model
 output or exact melody fidelity.
@@ -174,8 +207,9 @@ then push your feature branch and open a PR for teammate review. Branches:
 `feature/ui-lyrics`, `feature/song-synthesis`, `feature/login-profile`,
 `feature/academic-data`, `feature/player-library`.
 
-Keep API keys, local account data, generated audio, model weights and SDK paths out
-of GitHub. Generated files, `.env`, virtual environments and build outputs are ignored.
+Keep API keys, local account data, temporary generated audio, model weights and SDK paths
+out of GitHub. The eight supplied offline demo MP3s are intentionally included; temporary
+server output, local experiments, `.env`, virtual environments and build outputs are ignored.
 
 ## References
 

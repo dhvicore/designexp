@@ -19,6 +19,8 @@ import com.nmims.songstudio.auth.Student
 import com.nmims.songstudio.generation.LyricPrompts
 import com.nmims.songstudio.playback.AudioFiles
 import com.nmims.songstudio.playback.SongPlayer
+import com.nmims.songstudio.playback.SunoDemo
+import com.nmims.songstudio.playback.SunoDemoPlayer
 import com.nmims.songstudio.data.MusicChoices
 import com.nmims.songstudio.generation.SingingClient
 import com.nmims.songstudio.generation.MelodyReference
@@ -28,6 +30,7 @@ import kotlinx.coroutines.launch
 fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
     val context = LocalContext.current
     val data = remember { Curriculum(context) }
+    val savedSongs = remember { SunoDemo.catalog(context) }
     var page by rememberSaveable { mutableIntStateOf(1) }
     var unit by rememberSaveable { mutableStateOf("Unit 1") }
     var topicId by rememberSaveable { mutableIntStateOf(0) }
@@ -55,12 +58,14 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
     val topic = data.topics.first { it.id == topicId }
     val choices = MusicChoices.options(data, topic, category, showAllSongs)
     val choice = choices.firstOrNull { it.id == selectedSongId } ?: choices.first()
+    val savedDemo = savedSongs.firstOrNull { it.topicId == topic.id && it.category == category && it.songId == choice.id }
+    val savedSunoDemo = savedDemo != null
     val reference = choice.song
     val style = choice.style
     val melody = melodyReferences[choice.id]
     val useReference = preferReference && melody != null
     val language = if (category in listOf("Hindi", "Bhajan")) "hi" else "en"
-    val titles = listOf("Welcome", "Your classroom", "Make it yours", "Write the words", "Bring it to life")
+    val titles = listOf("Welcome", "Your classroom", "Make it yours", "Write the words", "Bring it to life", "Test your understanding")
     fun goBack() {
         if (page == 2 && choosingSong) choosingSong = false else page--
         notice = ""
@@ -75,8 +80,8 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                 TextButton(onClick = onLogout) { Text("Log out") }
             }
             if (page > 0) {
-                LinearProgressIndicator(progress = { page / 4f }, modifier = Modifier.fillMaxWidth(), color = Ink, trackColor = Lime)
-                Text("STEP $page OF 4  /  ${titles[page].uppercase()}", style = MaterialTheme.typography.labelSmall)
+                LinearProgressIndicator(progress = { page / 5f }, modifier = Modifier.fillMaxWidth(), color = Ink, trackColor = Lime)
+                Text("STEP $page OF 5  /  ${titles[page].uppercase()}", style = MaterialTheme.typography.labelSmall)
             }
             when (page) {
                 1 -> {
@@ -136,7 +141,9 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                         Text(style.instruments)
                         Text("${if (category == "Bhajan") "Hindi / Sanskrit devotional lyrics" else data.languages[language]} · ${style.name}")
                     }
-                    if (melody != null) {
+                    if (savedSunoDemo) {
+                        Text("Saved Suno demo available for this selection. It plays in the app when its MP3 is bundled; an online link is also available.", style = MaterialTheme.typography.bodySmall)
+                    } else if (melody != null) {
                         Text("Melody reference available · ${melody.bpm} BPM", style = MaterialTheme.typography.bodySmall)
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             FilterChip(selected = preferReference, onClick = { preferReference = true; lyrics = "" }, label = { Text("Follow melody") })
@@ -146,7 +153,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     } else {
                         Text("Original music in this style. This song's melody reference has not been added.", style = MaterialTheme.typography.bodySmall)
                     }
-                    if (melodyError.isNotBlank()) {
+                    if (!savedSunoDemo && melodyError.isNotBlank()) {
                         Text(melodyError, color = MaterialTheme.colorScheme.error)
                         TextButton(onClick = { scope.launch { loadMelodies() } }) { Text("Reconnect Music Server") }
                     }
@@ -158,6 +165,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                 3 -> {
                     Text("Make the lesson\nlyrical.", style = MaterialTheme.typography.headlineLarge)
                     Text("${topic.title} / ${data.languages[language]} / $category / ${reference.title}")
+                    if (savedSunoDemo) Text("This selection has a saved Suno recording. The text below is your editable study draft and may differ from the recorded lyrics.")
                     Panel(Lime) {
                         Text(if (useReference) "FIT WORDS TO MUSICAL PHRASES" else "YOUR EDUCATIONAL LYRICS", style = MaterialTheme.typography.labelSmall)
                         Text(if (useReference) "Fit the topic lyrics to the supplied melody’s phrase lengths, then review and edit before singing." else "Create a draft from the topic facts in your selected language and musical style.")
@@ -167,7 +175,10 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                         scope.launch {
                             try {
                                 val draft = LyricPrompts.draft(topic, category, choice)
-                                if (useReference) {
+                                if (savedSunoDemo) {
+                                    lyrics = savedDemo!!.lyrics
+                                    notice = "Lyrics loaded for the saved Suno recording. Editing them does not change its audio."
+                                } else if (useReference) {
                                     val adapted = SingingClient.adapt(topic, category, choice, draft, true)
                                     lyrics = adapted.lyrics; notice = adapted.note
                                 } else {
@@ -177,7 +188,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                             finally { busy = false }
                         }
                     }, modifier = Modifier.fillMaxWidth()) {
-                        Text(if (busy) "Fitting lyric phrases…" else if (lyrics.isBlank()) "Generate lyric draft" else "Regenerate lyric draft")
+                        Text(if (busy) "Fitting lyric phrases…" else if (savedSunoDemo) "Load saved song lyrics" else if (lyrics.isBlank()) "Generate lyric draft" else "Regenerate lyric draft")
                     }
                     if (generationError.isNotBlank()) Text(generationError, color = MaterialTheme.colorScheme.error)
                     OutlinedTextField(lyrics, { lyrics = it }, enabled = !busy, label = { Text("Your lyrics — editable") }, minLines = 10, modifier = Modifier.fillMaxWidth())
@@ -191,8 +202,12 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                         Text(topic.title, style = MaterialTheme.typography.titleLarge)
                         Text("${if (useReference) "Melody guide" else "Style reference"}: ${reference.title} — ${reference.artist}")
                         Text("${data.languages[language]} · ${style.name} · ${if (useReference) "${melody?.bpm} BPM" else tempo}")
-                        Text("Generate vocals and music here, then listen in the app.")
+                        Text(if (savedSunoDemo) "Listen to your saved Suno demo." else "Generate vocals and music here, then listen in the app.")
                     }
+                    if (savedSunoDemo) {
+                        SunoDemoPlayer(savedDemo!!)
+                        LyricsPanel(savedDemo!!.lyrics, "Words supplied for this saved song. Line highlighting is not synced to the audio yet.")
+                    } else {
                     val audioKey = listOf(student.id, topic.id, category, reference.title, tempo, focus, lyrics, useReference, if (useReference) melody?.sha else "original-v3").joinToString("\u0000")
                     val audioFile = remember(audioKey, audioRevision) { AudioFiles.file(context, audioKey) }
                     if (audioFile.exists()) {
@@ -218,8 +233,15 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     Text(if (useReference) "The singing model receives the melody audio and your fitted lyrics. Melody fidelity and pronunciation can vary." else "An original melody will be composed. To follow a specific tune, its melody reference must be in the library.", style = MaterialTheme.typography.bodySmall)
                     if (generationError.isNotBlank()) Text(generationError, color = MaterialTheme.colorScheme.error)
                     if (!audioFile.exists()) LyricsPanel(lyrics)
+                    }
+                    Button(enabled = !busy, onClick = { notice = ""; page = 5 }, modifier = Modifier.fillMaxWidth()) { Text("Try the activity →") }
                     OutlinedButton(enabled = !busy, onClick = { notice = ""; page = 3 }, modifier = Modifier.fillMaxWidth()) { Text("Edit lyrics") }
                     OutlinedButton(enabled = !busy, onClick = { notice = ""; page = 1 }, modifier = Modifier.fillMaxWidth()) { Text("Choose another topic") }
+                }
+                5 -> {
+                    LearningActivity(topic, data.topics)
+                    OutlinedButton(onClick = { page = 4 }, modifier = Modifier.fillMaxWidth()) { Text("Listen again") }
+                    OutlinedButton(onClick = { page = 1 }, modifier = Modifier.fillMaxWidth()) { Text("Choose another topic") }
                 }
             }
             if (notice.isNotEmpty()) Text(notice, color = MaterialTheme.colorScheme.primary)
@@ -232,11 +254,11 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
 }
 
 @Composable
-private fun LyricsPanel(lyrics: String) {
+private fun LyricsPanel(lyrics: String, description: String = "Your prepared lyrics. Line highlighting is not synced to the audio yet.") {
     Panel(Lavender) {
         Text("YOUR LYRICS", style = MaterialTheme.typography.labelSmall)
         Text("Read along", style = MaterialTheme.typography.titleLarge)
-        Text("Your prepared lyrics. Line highlighting is not synced to the audio yet.", style = MaterialTheme.typography.bodySmall)
+        Text(description, style = MaterialTheme.typography.bodySmall)
         SelectionContainer {
             Text(lyrics, style = MaterialTheme.typography.bodyLarge)
         }

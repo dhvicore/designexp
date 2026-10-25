@@ -1,0 +1,23 @@
+[Verse]
+On the closed span, A to B,
+Continuous, no breaks to see.
+At every point that's tucked inside,
+A derivative must reside.
+
+[Pre-Chorus]
+The endpoint values are the same,
+Three conditions frame the claim.
+
+[Chorus]
+Somewhere inside, we'll find a see,
+Strictly between our A and B.
+At least one point, the slope is zero,
+A horizontal tangent shows.
+Roll's theorem, let it show,
+There's a point with zero slope.
+
+[Outro]
+Closed span, no breaks; inside, a slope,
+Equal ends complete our scope.
+At least one see lies in between,
+A zero slope upon the scene.

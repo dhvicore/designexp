@@ -17,3 +17,6 @@ server/melodies/
 datasets/raw/
 datasets/prepared/
 datasets/exports/
+
+# Unfinished local singing experiments are not part of the shared app.
+experiments/
