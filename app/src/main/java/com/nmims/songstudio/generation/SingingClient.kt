@@ -56,7 +56,7 @@ object SingingClient {
         return JSONObject().put("topic", topic.title).put("song", choice.song.title).put("song_id", choice.id)
             .put("lyrics", lyrics).put("style_prompt", LyricPrompts.singingStyle(category, choice))
             .put("bpm", bpm).put("category", category).put("melody_mode", if (reference) "reference" else "original")
-            .put("language", if (category in listOf("Hindi", "Bhajan")) "hi" else "en")
+            .put("language", when (category) { "Hindi", "Bhajan" -> "hi"; "Marathi" -> "mr"; else -> "en" })
     }
 
     suspend fun generate(context: Context, key: String, topic: Topic, category: String,

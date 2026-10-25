@@ -96,14 +96,14 @@ fun LearningActivity(topic: Topic, all: List<Topic>) {
         }
     }
     Panel(Lavender) {
-        Text("2 / Choose the formula", style = MaterialTheme.typography.titleLarge)
-        Text("Which formula belongs to ${topic.title}?")
+        Text(if (topic.subject == "Chemistry") "2 / Choose the key terms" else "2 / Choose the formula", style = MaterialTheme.typography.titleLarge)
+        Text(if (topic.subject == "Chemistry") "Which key terms belong to ${topic.title}?" else "Which formula belongs to ${topic.title}?")
         options.forEach { option ->
             OutlinedButton(onClick = { formula = option }, enabled = !checked, modifier = Modifier.fillMaxWidth()) {
                 Text("${if (formula == option) "●" else "○"} $option")
             }
         }
-        if (checked) Text(if (formulaCorrect) "Correct formula!" else "The answer is: ${topic.formula}")
+        if (checked) Text(if (formulaCorrect) "Correct!" else "The answer is: ${topic.formula}")
     }
     Panel(Lavender) {
         Text("3 / Rebuild the lesson", style = MaterialTheme.typography.titleLarge)

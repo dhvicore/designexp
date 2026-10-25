@@ -78,5 +78,15 @@
     "assetPath": "demos/beta_lofi_sunflower_suno.mp3",
     "shareUrl": "",
     "sha256": "cbeb54f367f8a50f67b0a823fe648653415792cbfc8465653283c11fb7686491"
+  },
+  {
+    "topicId": 1001,
+    "category": "English",
+    "songId": "i-want-to-hold-your-hand",
+    "title": "Dalton’s Atomic Theory — English",
+    "lyrics": "[Verse 1]\nDalton pictured matter small,\nTiny atoms building all.\nIn his model, atoms stay,\nChemical changes rearrange.\n\nSame element, he proposed,\nHas identical atoms in its rows.\nDifferent elements can combine,\nIn simple whole-number ratios every time.\n\n[Chorus]\nAtoms join, atoms rearrange,\nThat is how reactions change.\nNot created, not destroyed,\nIn chemical reactions they're conserved.\n\nCount the atoms, find the way,\nDalton's theory comes to play.\nSimple ratios, elements too,\nBuild a compound, something new.\n\n[Verse 2]\nA compound has a fixed proportion,\nAtoms joining in formation.\nDifferent elements, different kinds,\nThese were Dalton's starting signs.\n\n[Bridge]\nHis model helped explain the scene,\nBut modern science changed the dream.\nAtoms have smaller parts inside,\nAnd isotopes need not share one mass.\n\n[Final Chorus]\nAtoms join, atoms rearrange,\nThat is how reactions change.\nSimple ratios, fixed proportions,\nRemember Dalton's explanations.\n\n[Outro]\nA historic model, a starting view,\nThen came evidence, and science grew.",
+    "assetPath": "demos/english_chem - usesuno.com.mp3",
+    "shareUrl": "",
+    "sha256": "b8826a968cb89d7b0a392692f06bb9521710a74f0c96033a38327c076104d98d"
   }
 ]

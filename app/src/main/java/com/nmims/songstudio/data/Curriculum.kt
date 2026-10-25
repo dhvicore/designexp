@@ -6,7 +6,9 @@ import org.json.JSONObject
 
 data class Topic(
     val id: Int, val unit: String, val title: String, val concept: String,
-    val formula: String, val lyrics: Map<String, String>, val reference: Map<String, String>
+    val formula: String, val lyrics: Map<String, String>, val reference: Map<String, String>,
+    val subject: String = "Calculus", val artists: Map<String, String> = emptyMap(),
+    val explanations: Map<String, String> = emptyMap()
 )
 data class ReferenceSong(val title: String, val artist: String, val bpm: Int, val mood: String)
 data class MusicStyle(
@@ -35,6 +37,17 @@ class Curriculum(context: Context) {
                 }, mapOf("en" to t.optString("ref_en"), "hi" to t.optString("ref_hi")))
         }.filter { it.unit.startsWith("Unit ") }
     }
+    val chemistry = ChemistryCurriculum(context)
+    val chemistryTopics = chemistry.topics.map { t ->
+        Topic(1000 + t.songId, t.unit, t.topicName.getValue("en"),
+            t.explanation.getValue("en"), t.keywords.getValue("en"),
+            t.lyrics.mapValues { it.value.replace("\\n", "\n") }, t.songTitle,
+            "Chemistry", t.artistName, t.explanation)
+    }
+    fun topicsForSubject(subject: String) = if (subject == "Chemistry") chemistryTopics else topics
+    fun unitsForSubject(subject: String): Map<String, String> =
+        if (subject == "Chemistry") chemistry.units else units
+
     val languages = linkedMapOf("en" to "English", "hi" to "Hindi", "mr" to "Marathi",
         "gu" to "Gujarati", "sa" to "Sanskrit")
     val collections = linkedMapOf("en" to "Hollywood / English", "hi" to "Bollywood / Hindi",

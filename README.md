@@ -294,3 +294,8 @@ preparation scripts, and the Rolle lesson specification. This is an ingestion
 pilot, not completed training. No aligned Hindi singing corpus or verified exact
 famous-song educational render has been obtained. The existing ACE-Step bridge
 has not been replaced by a score-controlled singing model in this change.
+
+
+### Chemistry curriculum
+
+Chemistry is available alongside Calculus: 60 topics across six units and supplementary sections, with English, Hindi and Marathi lyrics, explanations, keywords and song references. Imported from Aman's commit `57c6500` in the original `design-experience` repository. Select Chemistry, then a unit/topic and language, prepare/edit the supplied lyrics, and complete the practice activity. Dalton’s Atomic Theory has a bundled English Suno recording with its embedded lyrics. Other Chemistry selections still need recordings or the configured music service. The eight bundled Calculus recordings remain available.

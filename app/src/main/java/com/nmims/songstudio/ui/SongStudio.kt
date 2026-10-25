@@ -32,6 +32,9 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
     val data = remember { Curriculum(context) }
     val savedSongs = remember { SunoDemo.catalog(context) }
     var page by rememberSaveable { mutableIntStateOf(1) }
+    var subject by rememberSaveable { mutableStateOf("Calculus") }
+    val subjectTopics = data.topicsForSubject(subject)
+    val subjectUnits = data.unitsForSubject(subject)
     var unit by rememberSaveable { mutableStateOf("Unit 1") }
     var topicId by rememberSaveable { mutableIntStateOf(0) }
     var category by rememberSaveable { mutableStateOf("Hindi") }
@@ -55,7 +58,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
     var tempo by rememberSaveable { mutableStateOf("Moderate") }
     var lyrics by rememberSaveable { mutableStateOf("") }
     var notice by remember { mutableStateOf("") }
-    val topic = data.topics.first { it.id == topicId }
+    val topic = subjectTopics.first { it.id == topicId }
     val choices = MusicChoices.options(data, topic, category, showAllSongs)
     val choice = choices.firstOrNull { it.id == selectedSongId } ?: choices.first()
     val savedDemo = savedSongs.firstOrNull { it.topicId == topic.id && it.category == category && it.songId == choice.id }
@@ -64,7 +67,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
     val style = choice.style
     val melody = melodyReferences[choice.id]
     val useReference = preferReference && melody != null
-    val language = if (category in listOf("Hindi", "Bhajan")) "hi" else "en"
+    val language = when (category) { "Hindi", "Bhajan" -> "hi"; "Marathi" -> "mr"; else -> "en" }
     val titles = listOf("Welcome", "Your classroom", "Make it yours", "Write the words", "Bring it to life", "Test your understanding")
     fun goBack() {
         if (page == 2 && choosingSong) choosingSong = false else page--
@@ -88,20 +91,26 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     Text("What are we\nlearning, ${student.name.substringBefore(' ')}?", style = MaterialTheme.typography.headlineLarge)
                     Panel(Lime) {
                         Text("YOUR AVAILABLE COURSE", style = MaterialTheme.typography.labelSmall)
-                        Text("Engineering Mathematics I", style = MaterialTheme.typography.titleLarge)
-                        Text("Calculus · 702BS0C001")
+                        Text(if (subject == "Chemistry") "Chemistry" else "Engineering Mathematics I", style = MaterialTheme.typography.titleLarge)
+                        Text(if (subject == "Chemistry") "60 topics · English / Hindi / Marathi" else "Calculus · 702BS0C001")
                         Text("Branch, year and semester mappings await the team's verified academic dataset.", style = MaterialTheme.typography.bodySmall)
                     }
-                    Select("Subject", "Calculus", listOf("Calculus")) { }
-                    Select("Chapter / unit", unit, data.units.keys.toList(), { "${it}: ${data.units[it]}" }) { chosen ->
-                        unit = chosen; topicId = data.topics.first { it.unit == chosen }.id; lyrics = ""; selectedSongId = ""; showAllSongs = false
+                    Select("Subject", subject, listOf("Calculus", "Chemistry")) { chosen ->
+                        subject = chosen
+                        val first = data.topicsForSubject(chosen).first()
+                        unit = first.unit; topicId = first.id; category = "Hindi"
+                        lyrics = ""; selectedSongId = ""; showAllSongs = false
+                        choosingSong = false; generationError = ""; notice = ""
                     }
-                    val topics = data.topics.filter { it.unit == unit }
+                    Select("Chapter / unit", unit, subjectUnits.keys.toList(), { if (subject == "Chemistry") it else "${it}: ${subjectUnits[it]}" }) { chosen ->
+                        unit = chosen; topicId = subjectTopics.first { it.unit == chosen }.id; lyrics = ""; selectedSongId = ""; showAllSongs = false
+                    }
+                    val topics = subjectTopics.filter { it.unit == unit }
                     Select("Topic", topicId, topics.map { it.id }, { id -> topics.first { it.id == id }.title }) { topicId = it; lyrics = ""; selectedSongId = ""; showAllSongs = false }
                     Panel(Lavender) {
                         Text(topic.title, style = MaterialTheme.typography.titleLarge)
-                        Text(topic.concept)
-                        Text(topic.formula, fontWeight = FontWeight.SemiBold)
+                        Text(topic.explanations[language] ?: topic.concept)
+                        Text(if (subject == "Chemistry") "Key terms: ${topic.formula}" else topic.formula, fontWeight = FontWeight.SemiBold)
                     }
                     Button(onClick = { choosingSong = false; page = 2 }, modifier = Modifier.fillMaxWidth()) { Text("Choose your sound →") }
                 }
@@ -110,7 +119,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     Text("${topic.unit} / ${topic.title}", style = MaterialTheme.typography.bodyMedium)
                     if (!choosingSong) {
                         Text("First choose a category. Then choose one of its songs.")
-                        MusicChoices.categories.forEach { option ->
+                        (if (subject == "Chemistry") listOf("Hindi", "English", "Marathi") else MusicChoices.categories).forEach { option ->
                             OutlinedButton(onClick = {
                                 category = option; selectedSongId = ""; showAllSongs = false
                                 lyrics = ""; generationError = ""; choosingSong = true
@@ -120,6 +129,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                                     Text(when (option) {
                                         "Hindi" -> "Bollywood / Hindi songs · Hindi lyrics"
                                         "English" -> "English songs · English lyrics"
+                                        "Marathi" -> "Marathi lyrics · curriculum song reference"
                                         "Bhajan" -> "Devotional songs · Hindi / Sanskrit phrases"
                                         else -> "Relaxed music · English lyrics"
                                     }, style = MaterialTheme.typography.bodySmall)
@@ -137,7 +147,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     Panel(Lavender) {
                         Text(reference.title, style = MaterialTheme.typography.titleLarge)
                         Text(reference.artist)
-                        Text("${reference.mood} · target tempo ${reference.bpm} BPM")
+                        Text(if (subject == "Chemistry") (if (savedSunoDemo) "Saved recording available for this selection" else "Reference suggestion only · no recording bundled yet") else "${reference.mood} · target tempo ${reference.bpm} BPM")
                         Text(style.instruments)
                         Text("${if (category == "Bhajan") "Hindi / Sanskrit devotional lyrics" else data.languages[language]} · ${style.name}")
                     }
@@ -239,7 +249,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     OutlinedButton(enabled = !busy, onClick = { notice = ""; page = 1 }, modifier = Modifier.fillMaxWidth()) { Text("Choose another topic") }
                 }
                 5 -> {
-                    LearningActivity(topic, data.topics)
+                    LearningActivity(topic, subjectTopics)
                     OutlinedButton(onClick = { page = 4 }, modifier = Modifier.fillMaxWidth()) { Text("Listen again") }
                     OutlinedButton(onClick = { page = 1 }, modifier = Modifier.fillMaxWidth()) { Text("Choose another topic") }
                 }
@@ -247,7 +257,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
             if (notice.isNotEmpty()) Text(notice, color = MaterialTheme.colorScheme.primary)
             if (page > 1) TextButton(enabled = !busy, onClick = { goBack() }) { Text("← Back") }
             HorizontalDivider()
-            Text("MUSIC-BASED LEARNING / CALCULUS EDITION", style = MaterialTheme.typography.labelSmall)
+            Text("MUSIC-BASED LEARNING / ${subject.uppercase()} EDITION", style = MaterialTheme.typography.labelSmall)
             Spacer(Modifier.height(12.dp))
         }
     }

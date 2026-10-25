@@ -75,7 +75,7 @@ def validate(body):
     bpm = body.get("bpm")
     if not isinstance(bpm, int) or not 30 <= bpm <= 250:
         raise ValueError("Invalid tempo.")
-    if body["language"] not in ("en", "hi", "sa"):
+    if body["language"] not in ("en", "hi", "mr", "sa"):
         raise ValueError("Unsupported lyric language.")
     mode = body.get("melody_mode", "original")
     if mode not in ("reference", "original"):

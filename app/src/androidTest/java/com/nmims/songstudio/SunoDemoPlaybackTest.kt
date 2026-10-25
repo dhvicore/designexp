@@ -18,15 +18,15 @@ import java.util.concurrent.atomic.AtomicReference
 
 @RunWith(AndroidJUnit4::class)
 class SunoDemoPlaybackTest {
-    @Test fun allEightRecordingsAreSelectableAndPlayToTheirEndAfterSeeking() = runBlocking {
+    @Test fun allBundledRecordingsAreSelectableAndPlayToTheirEndAfterSeeking() = runBlocking {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         val curriculum = Curriculum(context)
         val songs = SunoDemo.catalog(context)
-        assertEquals(8, songs.size)
-        assertEquals(8, songs.map { Triple(it.topicId, it.category, it.songId) }.distinct().size)
-        assertEquals(8, songs.map { it.assetPath }.distinct().size)
+        assertEquals(9, songs.size)
+        assertEquals(9, songs.map { Triple(it.topicId, it.category, it.songId) }.distinct().size)
+        assertEquals(9, songs.map { it.assetPath }.distinct().size)
         for (song in songs) {
-            val topic = curriculum.topics.first { it.id == song.topicId }
+            val topic = (curriculum.topics + curriculum.chemistryTopics).first { it.id == song.topicId }
             assertEquals("Saved option should be first for ${song.title}", song.songId,
                 MusicChoices.options(curriculum, topic, song.category).first().id)
             assertTrue(song.lyrics.isNotBlank())

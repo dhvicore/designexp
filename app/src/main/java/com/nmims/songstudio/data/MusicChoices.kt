@@ -9,6 +9,13 @@ object MusicChoices {
     val categories = listOf("Hindi", "English", "Bhajan", "Lo-fi")
 
     fun options(data: Curriculum, topic: Topic, category: String, all: Boolean = false): List<SongChoice> {
+        if (topic.subject == "Chemistry") {
+            val language = when (category) { "Hindi" -> "hi"; "Marathi" -> "mr"; else -> "en" }
+            val style = MusicStyle("chemistry-reference", "Educational song", "",
+                "clear melodic educational singing", emptyList())
+            return listOf(SongChoice(ReferenceSong(topic.reference.getValue(language),
+                topic.artists.getValue(language), 90, "Curriculum song reference"), style))
+        }
         val language = if (category == "Hindi" || category == "Bhajan") "hi" else "en"
         var pool = data.styles(language).filter { it.id != "lofi" }.flatMap { style ->
             style.songs.map { SongChoice(it, style) }

@@ -13,12 +13,12 @@ import org.junit.runner.RunWith
 class LearningActivityTest {
     @Test fun allTopicsHaveUsablePracticeAndOneCorrectFormula() {
         val data = Curriculum(InstrumentationRegistry.getInstrumentation().targetContext)
-        for (topic in data.topics) {
+        for (topic in data.topics + data.chemistryTopics) {
             val lesson = PracticeActivities.lesson(topic)
             assertTrue(topic.title, lesson.blanks.isNotEmpty())
             assertTrue(topic.title, lesson.blanks.all { it.prompt.contains("___") && it.answer.isNotBlank() })
             assertTrue(topic.title, lesson.orderedLines.size >= 2)
-            val choices = PracticeActivities.formulaOptions(topic, data.topics)
+            val choices = PracticeActivities.formulaOptions(topic, data.topicsForSubject(topic.subject))
             assertEquals(topic.title, 4, choices.size)
             assertEquals(4, choices.distinct().size)
             assertEquals(1, choices.count { it == topic.formula })

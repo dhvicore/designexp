@@ -7,6 +7,10 @@ import com.nmims.songstudio.data.SongChoice
 /** Provider-independent contract. Suraj can pass this prompt through a backend API. */
 object LyricPrompts {
     fun draft(topic: Topic, category: String, choice: SongChoice): String {
+        if (topic.subject == "Chemistry") {
+            val language = when (category) { "Hindi" -> "hi"; "Marathi" -> "mr"; else -> "en" }
+            return topic.lyrics.getValue(language)
+        }
         if (topic.title == "Rolle's Theorem" && category == "Bhajan")
             return RolleLesson.bhajanDraft
         if (topic.title == "Rolle's Theorem" && category == "Hindi")
@@ -35,7 +39,7 @@ object LyricPrompts {
     }
 
     fun singingStyle(category: String, choice: SongChoice): String {
-        val language = if (category in listOf("Hindi", "Bhajan")) "Hindi" else "English"
+        val language = when (category) { "Hindi", "Bhajan" -> "Hindi"; "Marathi" -> "Marathi"; else -> "English" }
         val description = when (category) {
             "Bhajan" -> "devotional bhajan, Hindi with Sanskrit invocation, reverent melodic singing, harmonium, tabla, tanpura"
             "Lo-fi" -> "lo-fi chill song, gentle melodic $language vocals, soft keys, warm bass, relaxed drums"
