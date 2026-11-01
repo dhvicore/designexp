@@ -1,4 +1,4 @@
-# Syllabus Song Studio — Android
+# Syllabeat — Android
 
 Kotlin / Jetpack Compose app with 38 Calculus topics and 60 Chemistry topics.
 Repository: https://github.com/dhvicore/designexp
@@ -310,3 +310,8 @@ The app uses the bundled OFL-licensed Outfit font, cream/lime/lavender gradients
 For the Mac emulator, hardware graphics reduced the audio timing spikes observed with SwiftShader software rendering. If your emulator has similar crackling, select hardware graphics in its device settings and cold-boot without wiping data. The local demo uses `Pixel_10a` with `hw.gpu.mode=host` and unused microphone input disabled (`hw.audioInput=no`). These are emulator settings, not macOS sound changes or APK requirements. A normal cold boot preserves app data; do not choose Wipe Data.
 
 Optional timing-authoring tools under `tools/` require faster-whisper, NumPy and imageio-ffmpeg on the desktop. They need local Whisper models and output candidate reports for review; model weights and temporary reports are not committed. Android only reads the exported catalog cues. Approximate timings may need listening corrections, and lyrics absent from a shortened recording are not assigned invented timings.
+
+
+### Syllabeat branding and musical login screen
+
+The launcher label and app branding now use Syllabeat. Login/signup share a translucent cream form over a forest-green background with lavender/lime light, flowing staff lines and hand-drawn music notes. The artwork is static and rendered locally, so it does not add an animation loop or network dependency during playback. The package ID and local account database remain unchanged for in-place updates.

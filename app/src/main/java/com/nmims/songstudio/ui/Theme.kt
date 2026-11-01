@@ -99,7 +99,7 @@ fun StudioBrand() {
             Text("♫", color = Color.White, fontSize = 24.sp)
         }
         Column {
-            Text("Song Studio", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+            Text("Syllabeat", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
             Text("LEARN IN YOUR RHYTHM", style = MaterialTheme.typography.labelSmall, color = Accent)
         }
     }
@@ -148,7 +148,7 @@ fun StudioHero(title: String, subtitle: String) {
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
                 Text("♫", color = Lime, fontSize = 32.sp)
                 Column {
-                    Text("SONG STUDIO", color = Paper, style = MaterialTheme.typography.titleMedium, letterSpacing = 2.sp)
+                    Text("SYLLABEAT", color = Paper, style = MaterialTheme.typography.titleMedium, letterSpacing = 2.sp)
                     Text("LEARN IN YOUR RHYTHM", color = Color(0xFFB6CEBB), style = MaterialTheme.typography.labelSmall)
                 }
             }
