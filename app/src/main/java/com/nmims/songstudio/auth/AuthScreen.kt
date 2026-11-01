@@ -103,7 +103,7 @@ fun AuthScreen(onLogin: (Student) -> Unit) {
                 }) { Text(if (busy) "Please wait…" else if (signup) "Create account" else "Log in →") }
             }
             LoginCollectionHint()
-            Text("Made for NMIMS students · Calculus & Chemistry", color = Color(0xFFD1DFCD),
+            Text("Made for NMIMS students · Calculus, Chemistry & Economics", color = Color(0xFFD1DFCD),
                 style = MaterialTheme.typography.bodySmall)
             Text("Your account stays on this device. Sign in with your password when you return. College portal login is not connected.",
                 color = Color(0xFFB9CBB6), style = MaterialTheme.typography.bodySmall)

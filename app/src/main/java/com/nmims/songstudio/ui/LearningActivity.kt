@@ -96,8 +96,8 @@ fun LearningActivity(topic: Topic, all: List<Topic>) {
         }
     }
     Panel(Lavender) {
-        Text(if (topic.subject == "Chemistry") "2 / Choose the key terms" else "2 / Choose the formula", style = MaterialTheme.typography.titleLarge)
-        Text(if (topic.subject == "Chemistry") "Which key terms belong to ${topic.title}?" else "Which formula belongs to ${topic.title}?")
+        Text(if (topic.subject != "Calculus") "2 / Choose the formula / key terms" else "2 / Choose the formula", style = MaterialTheme.typography.titleLarge)
+        Text(if (topic.subject != "Calculus") "Which formula or key terms belong to ${topic.title}?" else "Which formula belongs to ${topic.title}?")
         options.forEach { option ->
             OutlinedButton(onClick = { formula = option }, enabled = !checked, modifier = Modifier.fillMaxWidth()) {
                 Text("${if (formula == option) "●" else "○"} $option")

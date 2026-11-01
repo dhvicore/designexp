@@ -1,7 +1,34 @@
 # Syllabeat — Android
 
-Kotlin / Jetpack Compose app with 38 Calculus topics and 60 Chemistry topics.
+Kotlin / Jetpack Compose app with 130 topics: 38 Calculus, 60 Chemistry and 32 Economics/Management.
 Repository: https://github.com/dhvicore/designexp
+
+## Economics / Management — on-device generation
+
+Imported Krishhma Vira's contribution from `dhvicore/design-experience`, upstream
+commit `a33143c`, into the existing Syllabeat flow without replacing accounts or
+Calculus/Chemistry assets. The Economics dataset has **32 topics across seven
+units**, with English, Hindi and Marathi descriptions, keywords and song suggestions.
+
+1. Select **Economics → unit → topic**.
+2. Choose **English, Hindi or Marathi**, then a song/style suggestion.
+3. Tap **Generate lyric draft**, review/edit, then **Continue to song**.
+4. Tap **Generate on device**. Android TTS records each line; the imported
+   pitch/syllable renderer arranges it over generated accompaniment.
+5. Play the saved WAV in the buffered Media3 player. Line cues follow the rendered
+   arrangement and support seeking. Continue to Step 5 for practice.
+
+**No Suno or Colab service is used for Economics.** Installed Android voices are
+preferred; a network voice may need internet. If a voice is unavailable, generation
+reports an error with a link to Android voice settings rather than playing music
+without lyrics. Finished WAVs and cues persist locally until app data is cleared.
+Song references guide tempo/style; the engine does **not** reproduce the original
+commercial recording's melody. TTS-based singing quality depends on the device voice.
+Only 12 source Economics topics include supplied English lyrics; remaining drafts
+are templates built from the contributed localized explanations and keywords.
+Subject owners should review these translations and drafts before presenting them.
+Assets are isolated in `app/src/main/assets/economics/`; imported DSP/data classes
+are under `com.nmims.songstudio.economics`. No source-repository deletion is involved.
 
 ## Run the offline demo first
 
@@ -94,7 +121,8 @@ networking and a production-hosted backend are not configured.
   receive the normalized server copy when Generate song is pressed again.
 - The final song screen displays the full prepared lyrics beneath the player,
   preserving line breaks and section labels. Text is selectable and scrolls with
-  the page; there is no timed highlighting or automatic line tracking yet.
+  the page. Bundled recordings use supplied approximate timing cues; Economics uses
+  the renderer’s line placement for timed highlighting.
 - The app submits real generation jobs, polls progress, downloads completed audio,
   and plays it with pause/seek/replay. Failure is shown as failure, not fake success.
 - The old import screen, prompt-copy controls and Twinkle recordings have been removed.

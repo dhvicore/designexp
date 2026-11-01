@@ -13,7 +13,7 @@ import org.junit.runner.RunWith
 class LearningActivityTest {
     @Test fun allTopicsHaveUsablePracticeAndOneCorrectFormula() {
         val data = Curriculum(InstrumentationRegistry.getInstrumentation().targetContext)
-        for (topic in data.topics + data.chemistryTopics) {
+        for (topic in data.topics + data.chemistryTopics + data.economics.topics) {
             val lesson = PracticeActivities.lesson(topic)
             assertTrue(topic.title, lesson.blanks.isNotEmpty())
             assertTrue(topic.title, lesson.blanks.all { it.prompt.contains("___") && it.answer.isNotBlank() })

@@ -1,7 +1,7 @@
 package com.nmims.songstudio.data
 
 data class SongChoice(val song: ReferenceSong, val style: MusicStyle) {
-    val id: String get() = song.title.lowercase().replace(Regex("[^a-z0-9]+"), "-").trim('-')
+    val id: String get() = song.title.lowercase().replace(Regex("[^\\p{L}\\p{N}]+"), "-").trim('-')
 }
 
 /** Topic-dependent recommendations from the team's existing song metadata. */
@@ -9,6 +9,7 @@ object MusicChoices {
     val categories = listOf("Hindi", "English", "Bhajan", "Lo-fi")
 
     fun options(data: Curriculum, topic: Topic, category: String, all: Boolean = false): List<SongChoice> {
+        if (topic.subject == "Economics") return data.economics.options(topic.id, category, all)
         if (topic.subject == "Chemistry") {
             val language = when (category) { "Hindi" -> "hi"; "Marathi" -> "mr"; else -> "en" }
             val style = MusicStyle("chemistry-reference", "Educational song", "",

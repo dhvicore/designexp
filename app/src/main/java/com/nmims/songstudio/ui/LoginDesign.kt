@@ -136,7 +136,7 @@ fun LoginGlassPanel(content: @Composable ColumnScope.() -> Unit) {
 @Composable
 fun LoginCollectionHint() {
     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(9.dp)) {
-        listOf("∫" to "98 topics", "♫" to "9 songs", "↻" to "Offline audio").forEach { (icon, label) ->
+        listOf("∫" to "130 topics", "♫" to "9 saved songs", "↻" to "Offline audio").forEach { (icon, label) ->
             Column(Modifier.weight(1f).background(Color.White.copy(alpha = .07f), RoundedCornerShape(15.dp))
                 .border(1.dp, Color.White.copy(alpha = .10f), RoundedCornerShape(15.dp)).padding(vertical = 12.dp),
                 horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(5.dp)) {

@@ -71,7 +71,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
     val reference = choice.song
     val style = choice.style
     val melody = melodyReferences[choice.id]
-    val useReference = preferReference && melody != null
+    val useReference = subject != "Economics" && preferReference && melody != null
     val language = when (category) { "Hindi", "Bhajan" -> "hi"; "Marathi" -> "mr"; else -> "en" }
     val titles = listOf("Welcome", "Your classroom", "Make it yours", "Write the words", "Bring it to life", "Test your understanding")
     fun goBack() {
@@ -96,11 +96,11 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     Text("What are we\nlearning, ${student.name.substringBefore(' ')}?", style = MaterialTheme.typography.headlineLarge)
                     Panel(Lavender) {
                         Text("YOUR AVAILABLE COURSE", style = MaterialTheme.typography.labelSmall)
-                        Text(if (subject == "Chemistry") "Chemistry" else "Engineering Mathematics I", style = MaterialTheme.typography.titleLarge)
-                        Text(if (subject == "Chemistry") "60 topics · English / Hindi / Marathi" else "Calculus · 702BS0C001")
+                        Text(when(subject) { "Chemistry" -> "Chemistry"; "Economics" -> "Economics & Management"; else -> "Engineering Mathematics I" }, style = MaterialTheme.typography.titleLarge)
+                        Text(when(subject) { "Chemistry" -> "60 topics · English / Hindi / Marathi"; "Economics" -> "7 units · 32 topics · English / Hindi / Marathi"; else -> "Calculus · 702BS0C001" })
                         Text("Branch, year and semester mappings await the team's verified academic dataset.", style = MaterialTheme.typography.bodySmall)
                     }
-                    Select("Subject", subject, listOf("Calculus", "Chemistry")) { chosen ->
+                    Select("Subject", subject, listOf("Calculus", "Chemistry", "Economics")) { chosen ->
                         subject = chosen
                         val first = data.topicsForSubject(chosen).first()
                         unit = first.unit; topicId = first.id; category = "Hindi"
@@ -124,7 +124,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     Text("${topic.unit} / ${topic.title}", style = MaterialTheme.typography.bodyMedium)
                     if (!choosingSong) {
                         Text("First choose a category. Then choose one of its songs.")
-                        (if (subject == "Chemistry") listOf("Hindi", "English", "Marathi") else MusicChoices.categories).forEach { option ->
+                        (if (subject != "Calculus") listOf("Hindi", "English", "Marathi") else MusicChoices.categories).forEach { option ->
                             OutlinedButton(onClick = {
                                 category = option; selectedSongId = ""; showAllSongs = false
                                 lyrics = ""; generationError = ""; choosingSong = true
@@ -156,7 +156,9 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                         Text(style.instruments)
                         Text("${if (category == "Bhajan") "Hindi / Sanskrit devotional lyrics" else data.languages[language]} · ${style.name}")
                     }
-                    if (savedSunoDemo) {
+                    if (subject == "Economics") {
+                        Text("Music and vocals are generated on your device. No Suno account or Mac server is needed. Song names guide style and tempo, not an exact recorded melody.")
+                    } else if (savedSunoDemo) {
                         Text("Saved Suno demo available for this selection. It plays in the app when its MP3 is bundled; an online link is also available.", style = MaterialTheme.typography.bodySmall)
                     } else if (melody != null) {
                         Text("Melody reference available · ${melody.bpm} BPM", style = MaterialTheme.typography.bodySmall)
@@ -168,7 +170,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     } else {
                         Text("Original music in this style. This song's melody reference has not been added.", style = MaterialTheme.typography.bodySmall)
                     }
-                    if (!savedSunoDemo && melodyError.isNotBlank()) {
+                    if (subject != "Economics" && !savedSunoDemo && melodyError.isNotBlank()) {
                         Text(melodyError, color = MaterialTheme.colorScheme.error)
                         TextButton(onClick = { scope.launch { loadMelodies() } }) { Text("Reconnect Music Server") }
                     }
@@ -189,7 +191,7 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                         busy = true; notice = ""; generationError = ""
                         scope.launch {
                             try {
-                                val draft = LyricPrompts.draft(topic, category, choice)
+                                val draft = if (subject == "Economics") data.economics.draft(topic.id, category, choice) else LyricPrompts.draft(topic, category, choice)
                                 if (savedSunoDemo) {
                                     lyrics = savedDemo!!.lyrics
                                     notice = "Lyrics loaded for the saved Suno recording. Editing them does not change its audio."
@@ -222,6 +224,8 @@ fun SongStudio(student: Student, onLogout: () -> Unit) = StudioTheme {
                     if (savedSunoDemo) {
                         SunoDemoPlayer(savedDemo!!)
                         if (savedDemo!!.cues.isEmpty()) LyricsPanel(savedDemo!!.lyrics, "Words supplied for this saved song. Line highlighting is not synced to the audio yet.")
+                    } else if (subject == "Economics") {
+                        EconomicsSongPlayer(lyrics, data.economics.song(category, choice), topic.id)
                     } else {
                     val audioKey = listOf(student.id, topic.id, category, reference.title, tempo, focus, lyrics, useReference, if (useReference) melody?.sha else "original-v3").joinToString("\u0000")
                     val audioFile = remember(audioKey, audioRevision) { AudioFiles.file(context, audioKey) }

@@ -44,9 +44,10 @@ class Curriculum(context: Context) {
             t.lyrics.mapValues { it.value.replace("\\n", "\n") }, t.songTitle,
             "Chemistry", t.artistName, t.explanation)
     }
-    fun topicsForSubject(subject: String) = if (subject == "Chemistry") chemistryTopics else topics
+    val economics = EconomicsCurriculum(context)
+    fun topicsForSubject(subject: String) = when(subject) { "Chemistry" -> chemistryTopics; "Economics" -> economics.topics; else -> topics }
     fun unitsForSubject(subject: String): Map<String, String> =
-        if (subject == "Chemistry") chemistry.units else units
+        when(subject) { "Chemistry" -> chemistry.units; "Economics" -> economics.units; else -> units }
 
     val languages = linkedMapOf("en" to "English", "hi" to "Hindi", "mr" to "Marathi",
         "gu" to "Gujarati", "sa" to "Sanskrit")

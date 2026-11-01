@@ -1,0 +1,2326 @@
+{
+  "subjects": [
+    {
+      "id": "economics",
+      "name": {
+        "en": "Economics",
+        "hi": "अर्थशास्त्र",
+        "mr": "अर्थशास्त्र"
+      },
+      "units": [
+        {
+          "number": 1,
+          "name": {
+            "en": "Introduction",
+            "hi": "परिचय",
+            "mr": "प्रस्तावना"
+          },
+          "topics": [
+            {
+              "id": "eco-1-1",
+              "name": {
+                "en": "Definition of Economics",
+                "hi": "अर्थशास्त्र की परिभाषा",
+                "mr": "अर्थशास्त्राची व्याख्या"
+              },
+              "description": {
+                "en": "Economics is the study of how societies allocate scarce resources to meet unlimited wants. It has two main branches: microeconomics (individual markets) and macroeconomics (the whole economy).",
+                "hi": "अर्थशास्त्र इस बात का अध्ययन है कि समाज सीमित संसाधनों का आवंटन कैसे करते हैं। इसकी दो शाखाएं हैं: सूक्ष्म अर्थशास्त्र और स्थूल अर्थशास्त्र।",
+                "mr": "अर्थशास्त्र हे समाज मर्यादित साधनसंपत्तीचे वाटप कसे करतो याचा अभ्यास आहे. याच्या दोन शाखा आहेत: सूक्ष्म अर्थशास्त्र आणि स्थूल अर्थशास्त्र."
+              },
+              "keywords": {
+                "en": [
+                  "economics",
+                  "basic concepts",
+                  "microeconomics",
+                  "macroeconomics"
+                ],
+                "hi": [
+                  "अर्थशास्त्र",
+                  "मूल अवधारणाएं",
+                  "सूक्ष्मअर्थशास्त्र",
+                  "स्थूलअर्थशास्त्र"
+                ],
+                "mr": [
+                  "अर्थशास्त्र",
+                  "मूलभूत संकल्पना",
+                  "सूक्ष्म अर्थशास्त्र",
+                  "स्थूल अर्थशास्त्र"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nOpen up the books, let the learning start,\nEconomics lives in every market and every cart,\nMicro looks at firms and the choices that we make,\nMacro sees the whole — the nation's path to take.\n\n[Chorus]\nEconomics, economics — it's how the world decides,\nWhere the money flows, where the value hides,\nFrom the smallest trade to the grandest plan,\nUnderstanding choices is where it all began.\n\n[Verse 2]\nScarcity is real, wants are never done,\nResources have their limits under every sun,\nBut with the right knowledge, we can find our way,\nEconomics lights the path, every single day."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "The song's upbeat energy and modern style mirror the dynamic, foundational nature of economics — always evolving, always relevant."
+            },
+            {
+              "id": "eco-1-2",
+              "name": {
+                "en": "Types of Economic Systems",
+                "hi": "आर्थिक प्रणालियों के प्रकार",
+                "mr": "आर्थिक व्यवस्थांचे प्रकार"
+              },
+              "description": {
+                "en": "Economic systems determine how resources are allocated. The three main types are capitalism (market-driven), socialism (state-controlled), and mixed economy (combination of both).",
+                "hi": "आर्थिक प्रणालियां तय करती हैं कि संसाधनों का आवंटन कैसे होगा। तीन मुख्य प्रकार हैं: पूंजीवाद, समाजवाद और मिश्रित अर्थव्यवस्था।",
+                "mr": "आर्थिक व्यवस्था साधनसंपत्तीचे वाटप कसे होईल हे ठरवतात. तीन मुख्य प्रकार आहेत: भांडवलशाही, समाजवाद आणि मिश्र अर्थव्यवस्था."
+              },
+              "keywords": {
+                "en": [
+                  "capitalism",
+                  "socialism",
+                  "mixed economy"
+                ],
+                "hi": [
+                  "पूंजीवाद",
+                  "समाजवाद",
+                  "मिश्रित अर्थव्यवस्था"
+                ],
+                "mr": [
+                  "भांडवलशाही",
+                  "समाजवाद",
+                  "मिश्र अर्थव्यवस्था"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nThree roads diverge in how nations run,\nCapitalism lets the free market have its fun,\nSocialism says the state should hold the key,\nMixed economy blends them both — that's what we see.\n\n[Chorus]\nSystems, systems, shaping every land,\nPrivate hands or public plans, help us understand,\nMarkets move and governments guide,\nIn this economic world, we all decide.\n\n[Verse 2]\nIndia chose the middle ground — a mixed design,\nPrivate enterprise with a public lifeline,\nEvery system has its strengths and its cost,\nLearning how they work means nothing's lost."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Just as different music genres coexist, capitalism, socialism, and mixed economies represent different approaches to organizing society's resources."
+            },
+            {
+              "id": "eco-1-3",
+              "name": {
+                "en": "Problem of Scarcity of Economic Resources",
+                "hi": "आर्थिक संसाधनों की कमी की समस्या",
+                "mr": "आर्थिक साधनसंपत्तीच्या टंचाईची समस्या"
+              },
+              "description": {
+                "en": "Scarcity is the fundamental economic problem — unlimited wants but limited resources. Every choice has an opportunity cost: what you give up to get something else.",
+                "hi": "कमी मूल आर्थिक समस्या है — असीमित इच्छाएं लेकिन सीमित संसाधन। हर पसंद की एक अवसर लागत होती है।",
+                "mr": "टंचाई ही मूलभूत आर्थिक समस्या आहे — अमर्याद गरजा पण मर्यादित साधने. प्रत्येक निवडीला संधी खर्च असतो."
+              },
+              "keywords": {
+                "en": [
+                  "scarcity",
+                  "resources",
+                  "choice",
+                  "opportunity cost"
+                ],
+                "hi": [
+                  "कमी",
+                  "संसाधन",
+                  "पसंद",
+                  "अवसर लागत"
+                ],
+                "mr": [
+                  "टंचाई",
+                  "साधनसंपत्ती",
+                  "निवड",
+                  "संधी खर्च"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nUnlimited wants but the resources are few,\nEvery single choice means something we can't do,\nThat's the opportunity cost we need to weigh,\nScarcity's the reason economics saves the day.\n\n[Chorus]\nChoose wisely, choose well,\nEvery trade-off has a story it can tell,\nWhen you pick one path, another fades away,\nThat's the price of choice we all must pay.\n\n[Verse 2]\nLand and labor, capital in hand,\nThese are scarce resources spread across the land,\nAllocating wisely, that's the central theme,\nEconomics turns the scarcity into a stream."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Like choosing between songs on a playlist, scarcity forces us to make choices — every choice has an opportunity cost of what we give up."
+            },
+            {
+              "id": "eco-1-4",
+              "name": {
+                "en": "Demand and Supply",
+                "hi": "मांग और आपूर्ति",
+                "mr": "मागणी आणि पुरवठा"
+              },
+              "description": {
+                "en": "Demand is how much consumers want to buy at different prices. Supply is how much producers offer. Together, they determine market prices through the laws of demand and supply.",
+                "hi": "मांग बताती है कि उपभोक्ता विभिन्न कीमतों पर कितना खरीदना चाहते हैं। आपूर्ति बताती है कि उत्पादक कितना बेचना चाहते हैं।",
+                "mr": "मागणी म्हणजे ग्राहक वेगवेगळ्या किमतींवर किती खरेदी करू इच्छितात. पुरवठा म्हणजे उत्पादक किती विकू इच्छितात."
+              },
+              "keywords": {
+                "en": [
+                  "demand",
+                  "supply",
+                  "law",
+                  "market"
+                ],
+                "hi": [
+                  "मांग",
+                  "आपूर्ति",
+                  "नियम",
+                  "बाजार"
+                ],
+                "mr": [
+                  "मागणी",
+                  "पुरवठा",
+                  "नियम",
+                  "बाजार"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nWhen the price goes high, buyers step away,\nWhen the price comes down, more demand comes into play,\nThat's the law of demand — simple, clean, and clear,\nHigher price means less is what consumers want to hear.\n\n[Chorus]\nDemand and supply, supply and demand,\nTogether they shape the price across the land,\nWhen they meet in the middle, the market finds its beat,\nEquilibrium is where the two compete.\n\n[Verse 2]\nSuppliers want more when the price is right,\nHigher prices mean more goods come into sight,\nLaw of supply says produce when returns are high,\nTogether with demand, they tell us where prices lie."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "The push and pull in music mirrors demand and supply — when a song is popular (high demand), it gets more airplay (supply responds)."
+            },
+            {
+              "id": "eco-1-5",
+              "name": {
+                "en": "Demand Curve and Supply Curve",
+                "hi": "मांग वक्र और आपूर्ति वक्र",
+                "mr": "मागणी वक्र आणि पुरवठा वक्र"
+              },
+              "description": {
+                "en": "The demand curve slopes downward (higher price means less demand). The supply curve slopes upward (higher price means more supply). Where they cross is equilibrium.",
+                "hi": "मांग वक्र नीचे की ओर झुकता है (अधिक कीमत = कम मांग)। आपूर्ति वक्र ऊपर की ओर झुकता है। जहां वे मिलते हैं वह संतुलन है।",
+                "mr": "मागणी वक्र खालच्या दिशेने जातो (अधिक किंमत = कमी मागणी). पुरवठा वक्र वरच्या दिशेने जातो. ते जिथे भेटतात तो समतोल आहे."
+              },
+              "keywords": {
+                "en": [
+                  "curves",
+                  "equilibrium"
+                ],
+                "hi": [
+                  "वक्र",
+                  "संतुलन"
+                ],
+                "mr": [
+                  "वक्र",
+                  "समतोल"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nDraw a line that slopes from high to low,\nThat's the demand curve — as price drops, purchases grow,\nNow draw another rising from the left to right,\nSupply curve shows producers ready for the fight.\n\n[Chorus]\nCurves that cross, curves that meet,\nWhere demand meets supply is the market's heartbeat,\nEquilibrium point — the balance we all need,\nWhere buyers and sellers silently agree.\n\n[Verse 2]\nBelow the crossing point, demand exceeds the store,\nAbove it, surplus grows as supply creates much more,\nThe curves reveal the truth behind every marketplace,\nEconomics in a graph — elegant and full of grace."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Like a melody's rising and falling notes, demand and supply curves move in opposite directions to find their equilibrium point."
+            },
+            {
+              "id": "eco-1-6",
+              "name": {
+                "en": "Equilibrium of Demand and Supply",
+                "hi": "मांग और आपूर्ति का संतुलन",
+                "mr": "मागणी आणि पुरवठ्याचा समतोल"
+              },
+              "description": {
+                "en": "Market equilibrium is the price where quantity demanded equals quantity supplied. At this point, there is no surplus or shortage in the market.",
+                "hi": "बाजार संतुलन वह कीमत है जहां मांग की मात्रा आपूर्ति की मात्रा के बराबर होती है। इस बिंदु पर कोई अधिशेष या कमी नहीं होती।",
+                "mr": "बाजार समतोल ही किंमत आहे जिथे मागणीचे प्रमाण पुरवठ्याच्या प्रमाणाएवढे असते. या बिंदूवर कोणताही अतिरेक किंवा तुटवडा नसतो."
+              },
+              "keywords": {
+                "en": [
+                  "equilibrium",
+                  "market price"
+                ],
+                "hi": [
+                  "संतुलन",
+                  "बाजार मूल्य"
+                ],
+                "mr": [
+                  "समतोल",
+                  "बाजारभाव"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "A perfect harmony in music is like market equilibrium — the right balance where buyers and sellers agree on the price."
+            },
+            {
+              "id": "eco-1-7",
+              "name": {
+                "en": "Shift in Demand and Supply",
+                "hi": "मांग और आपूर्ति में बदलाव",
+                "mr": "मागणी आणि पुरवठ्यातील बदल"
+              },
+              "description": {
+                "en": "Demand and supply curves shift when non-price factors change — income, preferences, technology, input costs. Shifts change the equilibrium price and quantity.",
+                "hi": "जब गैर-मूल्य कारक बदलते हैं तो मांग और आपूर्ति वक्र बदलते हैं — आय, प्राथमिकताएं, प्रौद्योगिकी आदि।",
+                "mr": "किंमतीव्यतिरिक्त इतर घटक बदलतात तेव्हा मागणी आणि पुरवठा वक्र बदलतात — उत्पन्न, प्राधान्ये, तंत्रज्ञान इत्यादी."
+              },
+              "keywords": {
+                "en": [
+                  "shift",
+                  "determinants"
+                ],
+                "hi": [
+                  "बदलाव",
+                  "निर्धारक"
+                ],
+                "mr": [
+                  "बदल",
+                  "निर्धारक घटक"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Just as a song's popularity can shift with trends and tastes, demand and supply curves shift when external factors change."
+            },
+            {
+              "id": "eco-1-8",
+              "name": {
+                "en": "Application of Demand and Supply",
+                "hi": "मांग और आपूर्ति का अनुप्रयोग",
+                "mr": "मागणी आणि पुरवठ्याचा उपयोग"
+              },
+              "description": {
+                "en": "Elasticity measures how responsive demand or supply is to price changes. Elastic goods see big quantity changes; inelastic goods show little response. This affects revenue.",
+                "hi": "लोच मापती है कि मांग या आपूर्ति कीमत परिवर्तन पर कितनी प्रतिक्रियाशील है। यह राजस्व को प्रभावित करती है।",
+                "mr": "लवचिकता मोजते की मागणी किंवा पुरवठा किंमत बदलांना किती प्रतिसाद देतो. हे महसुलावर परिणाम करते."
+              },
+              "keywords": {
+                "en": [
+                  "price elasticity",
+                  "demand elasticity",
+                  "supply elasticity",
+                  "revenue"
+                ],
+                "hi": [
+                  "मूल्य लोच",
+                  "मांग लोच",
+                  "आपूर्ति लोच",
+                  "राजस्व"
+                ],
+                "mr": [
+                  "किंमत लवचिकता",
+                  "मागणी लवचिकता",
+                  "पुरवठा लवचिकता",
+                  "महसूल"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Elasticity is like how audiences respond to price changes — some fans will pay anything (inelastic), others are price-sensitive (elastic)."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "name": {
+            "en": "Market Structure / Macroeconomics",
+            "hi": "बाजार संरचना / स्थूल अर्थशास्त्र",
+            "mr": "बाजार रचना / स्थूल अर्थशास्त्र"
+          },
+          "topics": [
+            {
+              "id": "eco-2-1",
+              "name": {
+                "en": "Types of Competition",
+                "hi": "प्रतिस्पर्धा के प्रकार",
+                "mr": "स्पर्धेचे प्रकार"
+              },
+              "description": {
+                "en": "Markets range from perfect competition (many sellers, identical products) to monopoly (single seller). In between are oligopoly (few sellers) and monopolistic competition.",
+                "hi": "बाजार पूर्ण प्रतिस्पर्धा (कई विक्रेता) से एकाधिकार (एक विक्रेता) तक होते हैं। बीच में अल्पाधिकार और एकाधिकारी प्रतिस्पर्धा हैं।",
+                "mr": "बाजार पूर्ण स्पर्धा (अनेक विक्रेते) पासून मक्तेदारी (एक विक्रेता) पर्यंत असतात. मध्ये अल्पाधिकार आणि मक्तेदारीयुक्त स्पर्धा आहे."
+              },
+              "keywords": {
+                "en": [
+                  "monopoly",
+                  "oligopoly",
+                  "monopolistic competition",
+                  "perfect competition",
+                  "imperfect competition"
+                ],
+                "hi": [
+                  "एकाधिकार",
+                  "अल्पाधिकार",
+                  "एकाधिकार प्रतिस्पर्धा",
+                  "पूर्ण प्रतिस्पर्धा",
+                  "अपूर्ण प्रतिस्पर्धा"
+                ],
+                "mr": [
+                  "मक्तेदारी",
+                  "अल्पाधिकार",
+                  "मक्तेदारीयुक्त स्पर्धा",
+                  "पूर्ण स्पर्धा",
+                  "अपूर्ण स्पर्धा"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nPerfect competition — many sellers, same product line,\nMonopoly means one firm — all the power is mine,\nOligopoly — just a few control the game,\nMonopolistic competition — similar but not the same.\n\n[Chorus]\nCompetition drives the market, shapes the price we pay,\nFrom perfect to imperfect, in every single way,\nUnderstanding structures helps us see the light,\nHow market power determines what is wrong or right.\n\n[Verse 2]\nBarriers to entry, product differentiation,\nPrice-making power across every station,\nThe spectrum of competition tells a market's tale,\nFrom free and open trading to a single scale."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "The music industry shows all forms of competition — from indie artists (perfect competition) to major label dominance (oligopoly)."
+            },
+            {
+              "id": "eco-2-2",
+              "name": {
+                "en": "Government Policies towards Industries",
+                "hi": "उद्योगों के प्रति सरकारी नीतियां",
+                "mr": "उद्योगांबाबत सरकारी धोरणे"
+              },
+              "description": {
+                "en": "Governments use industrial policies like licensing, subsidies, tariffs, and regulations to influence industry growth and protect consumer interests.",
+                "hi": "सरकारें लाइसेंसिंग, सब्सिडी और नियमों जैसी औद्योगिक नीतियों का उपयोग उद्योग विकास को प्रभावित करने के लिए करती हैं।",
+                "mr": "सरकार परवाना, अनुदान आणि नियमन यांसारख्या औद्योगिक धोरणांचा वापर उद्योग वाढीवर प्रभाव टाकण्यासाठी करते."
+              },
+              "keywords": {
+                "en": [
+                  "industry policy"
+                ],
+                "hi": [
+                  "उद्योग नीति"
+                ],
+                "mr": [
+                  "उद्योग धोरण"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Government policies shape industries like music regulations shape the entertainment industry — through licensing, content guidelines, and taxation."
+            },
+            {
+              "id": "eco-2-3",
+              "name": {
+                "en": "Circular Flow of Economy",
+                "hi": "अर्थव्यवस्था का चक्रीय प्रवाह",
+                "mr": "अर्थव्यवस्थेचा चक्रीय प्रवाह"
+              },
+              "description": {
+                "en": "Money flows in a circle: households provide labor to firms, firms pay wages, households buy goods, firms earn revenue. This is the circular flow of income.",
+                "hi": "धन एक चक्र में बहता है: परिवार श्रम देते हैं, फर्म मजदूरी देती हैं, परिवार सामान खरीदते हैं। यह आय का चक्रीय प्रवाह है।",
+                "mr": "पैसा एका चक्रात वाहतो: कुटुंबे श्रम देतात, कंपन्या वेतन देतात, कुटुंबे वस्तू खरेदी करतात. हा उत्पन्नाचा चक्रीय प्रवाह आहे."
+              },
+              "keywords": {
+                "en": [
+                  "circular flow",
+                  "income"
+                ],
+                "hi": [
+                  "चक्रीय प्रवाह",
+                  "आय"
+                ],
+                "mr": [
+                  "चक्रीय प्रवाह",
+                  "उत्पन्न"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Money flows in circles like a beat loops — from households to firms and back, creating the rhythm of the economy."
+            },
+            {
+              "id": "eco-2-4",
+              "name": {
+                "en": "National Income",
+                "hi": "राष्ट्रीय आय",
+                "mr": "राष्ट्रीय उत्पन्न"
+              },
+              "description": {
+                "en": "GDP measures the total value of goods and services produced within a country. GNP includes income earned abroad. Both measure a nation's economic health.",
+                "hi": "जीडीपी देश के भीतर उत्पादित वस्तुओं और सेवाओं का कुल मूल्य मापता है। जीएनपी में विदेश से अर्जित आय भी शामिल है।",
+                "mr": "जीडीपी देशात उत्पादित वस्तू आणि सेवांचे एकूण मूल्य मोजतो. जीएनपीमध्ये परदेशातून मिळणारे उत्पन्नही समाविष्ट आहे."
+              },
+              "keywords": {
+                "en": [
+                  "GDP",
+                  "GNP"
+                ],
+                "hi": [
+                  "जीडीपी",
+                  "जीएनपी"
+                ],
+                "mr": [
+                  "जीडीपी",
+                  "जीएनपी"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nGDP counts everything produced within our land,\nGoods and services combined — isn't that grand?\nGNP goes further, adds income from abroad,\nMeasuring a nation's wealth, these metrics are the rod.\n\n[Chorus]\nNational income, tell me how we grow,\nGDP and GNP — the numbers that we know,\nCounting every factory, every service, every trade,\nThis is how a country's economic health is weighed.\n\n[Verse 2]\nNominal GDP shows the current price in play,\nReal GDP adjusts for inflation's sway,\nPer capita tells us what each person earns,\nNational income accounting — a concept every student learns."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Espresso",
+                    "artist": "Sabrina Carpenter",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Nazar Na Lag Jaaye",
+                    "artist": "Nora Fatehi, Bappi Lahiri, Vishal-Shekhar",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Nazar Na Lag Jaaye",
+                    "artist": "Nora Fatehi, Bappi Lahiri, Vishal-Shekhar",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "GDP and GNP measure a nation's economic output — like chart rankings measure a song's commercial success and reach."
+            },
+            {
+              "id": "eco-2-5",
+              "name": {
+                "en": "Inflation",
+                "hi": "मुद्रास्फीति",
+                "mr": "महागाई"
+              },
+              "description": {
+                "en": "Inflation is a sustained rise in the general price level. Cost-push inflation comes from rising production costs; demand-pull inflation comes from excess demand. CPI tracks it.",
+                "hi": "मुद्रास्फीति सामान्य मूल्य स्तर में निरंतर वृद्धि है। लागत-पुश उत्पादन लागत से आती है; मांग-पुल अत्यधिक मांग से आती है।",
+                "mr": "महागाई म्हणजे सामान्य किंमत पातळीत सातत्यपूर्ण वाढ. पुश महागाई उत्पादन खर्चामुळे येते; पुल महागाई अतिरिक्त मागणीमुळे येते."
+              },
+              "keywords": {
+                "en": [
+                  "CPI",
+                  "push inflation",
+                  "pull inflation"
+                ],
+                "hi": [
+                  "उपभोक्ता मूल्य सूचकांक",
+                  "पुश मुद्रास्फीति",
+                  "पुल मुद्रास्फीति"
+                ],
+                "mr": [
+                  "ग्राहक किंमत निर्देशांक",
+                  "पुश महागाई",
+                  "पुल महागाई"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nPrices climbing higher, month by month they grow,\nThat's inflation knocking at everybody's door, you know,\nCost-push means production costs are on the rise,\nDemand-pull means too much money chasing limited supplies.\n\n[Chorus]\nInflation, inflation — rising every day,\nCPI tracks the changes in what consumers pay,\nToo much is a problem, a little keeps things right,\nBalancing the pressure is the central banker's fight.\n\n[Verse 2]\nThe consumer price index measures what we spend,\nOn food and fuel and housing — watching every trend,\nModerate inflation can signal a growing land,\nBut hyperinflation spirals out of hand."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Espresso",
+                    "artist": "Sabrina Carpenter",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Nazar Na Lag Jaaye",
+                    "artist": "Nora Fatehi, Bappi Lahiri, Vishal-Shekhar",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Nazar Na Lag Jaaye",
+                    "artist": "Nora Fatehi, Bappi Lahiri, Vishal-Shekhar",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Inflation rises like concert ticket prices over the years — driven by rising costs (cost-push) or high demand for popular artists (demand-pull)."
+            },
+            {
+              "id": "eco-2-6",
+              "name": {
+                "en": "Unemployment",
+                "hi": "बेरोजगारी",
+                "mr": "बेरोजगारी"
+              },
+              "description": {
+                "en": "The Phillips curve shows an inverse relationship between unemployment and inflation: when unemployment falls, inflation tends to rise, and vice versa.",
+                "hi": "फिलिप्स वक्र बेरोजगारी और मुद्रास्फीति के बीच विपरीत संबंध दर्शाता है: जब बेरोजगारी घटती है, मुद्रास्फीति बढ़ती है।",
+                "mr": "फिलिप्स वक्र बेरोजगारी आणि महागाई यांच्यातील विपरीत संबंध दर्शवतो: बेरोजगारी कमी होते तेव्हा महागाई वाढते."
+              },
+              "keywords": {
+                "en": [
+                  "Phillips curve"
+                ],
+                "hi": [
+                  "फिलिप्स वक्र"
+                ],
+                "mr": [
+                  "फिलिप्स वक्र"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "The Phillips curve trade-off between unemployment and inflation is like balancing tempo and melody — changing one affects the other."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "name": {
+            "en": "Functions of Central Bank",
+            "hi": "केंद्रीय बैंक के कार्य",
+            "mr": "मध्यवर्ती बँकेची कार्ये"
+          },
+          "topics": [
+            {
+              "id": "eco-3-1",
+              "name": {
+                "en": "Central Bank",
+                "hi": "केंद्रीय बैंक",
+                "mr": "मध्यवर्ती बँक"
+              },
+              "description": {
+                "en": "The Reserve Bank of India (RBI) is India's central bank. It controls monetary policy, regulates banks, manages currency, and maintains financial stability.",
+                "hi": "भारतीय रिज़र्व बैंक (आरबीआई) भारत का केंद्रीय बैंक है। यह मौद्रिक नीति नियंत्रित करता है और वित्तीय स्थिरता बनाए रखता है।",
+                "mr": "भारतीय रिझर्व्ह बँक (आरबीआय) ही भारताची मध्यवर्ती बँक आहे. ती चलनविषयक धोरण नियंत्रित करते आणि आर्थिक स्थिरता राखते."
+              },
+              "keywords": {
+                "en": [
+                  "RBI",
+                  "functions"
+                ],
+                "hi": [
+                  "आरबीआई",
+                  "कार्य"
+                ],
+                "mr": [
+                  "आरबीआय",
+                  "कार्ये"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nReserve Bank of India, standing tall and strong,\nRegulating money, making sure nothing goes wrong,\nBanker to the banks, and to the government too,\nIssuing currency — that's what central banks do.\n\n[Chorus]\nRBI, RBI — the guardian of the land,\nMonetary policy shaped by a steady hand,\nControlling inflation, keeping growth on track,\nThe central bank ensures the economy won't crack.\n\n[Verse 2]\nLender of last resort when banks are in distress,\nManaging foreign exchange, cleaning up the mess,\nFrom repo rates to CRR, the tools are in their hands,\nThe central bank conducts — and the economy expands."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "The RBI conducts the economy like a music producer conducts an orchestra — setting the tempo, controlling the mix, maintaining harmony."
+            },
+            {
+              "id": "eco-3-2",
+              "name": {
+                "en": "Money Supply",
+                "hi": "मुद्रा आपूर्ति",
+                "mr": "पैशाचा पुरवठा"
+              },
+              "description": {
+                "en": "Money supply is the total amount of money circulating in the economy. The RBI controls it through various tools to maintain price stability and growth.",
+                "hi": "मुद्रा आपूर्ति अर्थव्यवस्था में प्रचलित धन की कुल मात्रा है। आरबीआई विभिन्न उपकरणों से इसे नियंत्रित करता है।",
+                "mr": "पैशाचा पुरवठा म्हणजे अर्थव्यवस्थेत फिरणाऱ्या पैशाचे एकूण प्रमाण. आरबीआय विविध साधनांनी हे नियंत्रित करते."
+              },
+              "keywords": {
+                "en": [
+                  "money supply"
+                ],
+                "hi": [
+                  "मुद्रा आपूर्ति"
+                ],
+                "mr": [
+                  "पैशाचा पुरवठा"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Money supply in an economy is like the volume control in music — too much creates noise (inflation), too little leaves silence (recession)."
+            },
+            {
+              "id": "eco-3-3",
+              "name": {
+                "en": "Monetary Policy",
+                "hi": "मौद्रिक नीति",
+                "mr": "चलनविषयक धोरण"
+              },
+              "description": {
+                "en": "Monetary policy uses interest rates and money supply to control inflation and stimulate economic growth. The RBI sets key rates like the repo rate.",
+                "hi": "मौद्रिक नीति ब्याज दरों और मुद्रा आपूर्ति का उपयोग मुद्रास्फीति नियंत्रित करने और विकास को बढ़ावा देने के लिए करती है।",
+                "mr": "चलनविषयक धोरण व्याजदर आणि पैशाच्या पुरवठ्याचा वापर महागाई नियंत्रित करण्यासाठी आणि विकासाला चालना देण्यासाठी करते."
+              },
+              "keywords": {
+                "en": [
+                  "monetary policy"
+                ],
+                "hi": [
+                  "मौद्रिक नीति"
+                ],
+                "mr": [
+                  "चलनविषयक धोरण"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Monetary policy fine-tunes the economy like an equalizer adjusts frequencies — tweaking interest rates to get the right economic balance."
+            },
+            {
+              "id": "eco-3-4",
+              "name": {
+                "en": "Fiscal Policy",
+                "hi": "राजकोषीय नीति",
+                "mr": "वित्तीय धोरण"
+              },
+              "description": {
+                "en": "Fiscal policy uses government spending and taxation to influence the economy. Expansionary policy increases spending; contractionary policy reduces it.",
+                "hi": "राजकोषीय नीति अर्थव्यवस्था को प्रभावित करने के लिए सरकारी खर्च और कराधान का उपयोग करती है।",
+                "mr": "वित्तीय धोरण अर्थव्यवस्थेवर प्रभाव टाकण्यासाठी सरकारी खर्च आणि कर आकारणीचा वापर करते."
+              },
+              "keywords": {
+                "en": [
+                  "fiscal policy"
+                ],
+                "hi": [
+                  "राजकोषीय नीति"
+                ],
+                "mr": [
+                  "वित्तीय धोरण"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Fiscal policy uses government spending and taxes like a DJ uses bass and treble — adjusting the mix to keep the economic party going."
+            },
+            {
+              "id": "eco-3-5",
+              "name": {
+                "en": "Consumer Behaviour",
+                "hi": "उपभोक्ता व्यवहार",
+                "mr": "ग्राहक वर्तन"
+              },
+              "description": {
+                "en": "Utility is the satisfaction a consumer gets from a good. Marginal utility is the extra satisfaction from one more unit — it usually decreases with each additional unit consumed.",
+                "hi": "उपयोगिता वह संतुष्टि है जो उपभोक्ता को किसी वस्तु से मिलती है। सीमांत उपयोगिता एक और इकाई से मिलने वाली अतिरिक्त संतुष्टि है।",
+                "mr": "उपयोगिता म्हणजे ग्राहकाला एखाद्या वस्तूपासून मिळणारे समाधान. किरकोळ उपयोगिता म्हणजे आणखी एका एककापासून मिळणारे अतिरिक्त समाधान."
+              },
+              "keywords": {
+                "en": [
+                  "utility",
+                  "marginal utility"
+                ],
+                "hi": [
+                  "उपयोगिता",
+                  "सीमांत उपयोगिता"
+                ],
+                "mr": [
+                  "उपयोगिता",
+                  "किरकोळ उपयोगिता"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Espresso",
+                    "artist": "Sabrina Carpenter",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Nazar Na Lag Jaaye",
+                    "artist": "Nora Fatehi, Bappi Lahiri, Vishal-Shekhar",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Nazar Na Lag Jaaye",
+                    "artist": "Nora Fatehi, Bappi Lahiri, Vishal-Shekhar",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Consumer satisfaction from goods decreases with each unit, like how replaying a song too much reduces the thrill — that's diminishing marginal utility."
+            },
+            {
+              "id": "eco-3-6",
+              "name": {
+                "en": "New Economic Policy",
+                "hi": "नई आर्थिक नीति",
+                "mr": "नवीन आर्थिक धोरण"
+              },
+              "description": {
+                "en": "India's 1991 reforms introduced LPG: Liberalization (reducing restrictions), Privatization (selling government enterprises), and Globalization (opening to world markets).",
+                "hi": "भारत के 1991 के सुधारों ने एलपीजी लाया: उदारीकरण (प्रतिबंध कम करना), निजीकरण (सरकारी उद्यम बेचना), और वैश्वीकरण (विश्व बाजारों के लिए खोलना)।",
+                "mr": "भारताच्या 1991 च्या सुधारणांनी एलपीजी आणले: उदारीकरण (निर्बंध कमी करणे), खासगीकरण (सरकारी उद्योग विकणे), आणि जागतिकीकरण (जागतिक बाजारांसाठी खुले करणे)."
+              },
+              "keywords": {
+                "en": [
+                  "liberalization",
+                  "privatization",
+                  "globalization"
+                ],
+                "hi": [
+                  "उदारीकरण",
+                  "निजीकरण",
+                  "वैश्वीकरण"
+                ],
+                "mr": [
+                  "उदारीकरण",
+                  "खासगीकरण",
+                  "जागतिकीकरण"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nNineteen ninety-one, the winds of change arrived,\nLiberalization — Indian economy revived,\nPrivatization said let businesses run free,\nGlobalization opened doors for you and me.\n\n[Chorus]\nLPG — liberalize, privatize, go global wide,\nBreaking down the barriers, opening up with pride,\nIndia stepped into the world marketplace,\nNew Economic Policy gave the nation grace.\n\n[Verse 2]\nFewer licenses, more freedom to compete,\nForeign investment flowing down every street,\nThe world became a market, borders started to fade,\nIndia's new economic journey was finally made."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "India's 1991 LPG reforms opened the economy to the world — like streaming platforms opened music to global audiences beyond borders."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "name": {
+            "en": "Theory of Production",
+            "hi": "उत्पादन का सिद्धांत",
+            "mr": "उत्पादन सिद्धांत"
+          },
+          "topics": [
+            {
+              "id": "eco-4-1",
+              "name": {
+                "en": "Law of Diminishing Returns",
+                "hi": "ह्रासमान प्रतिफल का नियम",
+                "mr": "र्‍हासमान परताव्याचा नियम"
+              },
+              "description": {
+                "en": "The law of diminishing returns states that adding more of one input (while keeping others fixed) eventually produces smaller and smaller increases in output.",
+                "hi": "ह्रासमान प्रतिफल का नियम कहता है कि एक आदान बढ़ाने से (अन्य स्थिर रखते हुए) अंततः उत्पादन वृद्धि कम होती जाती है।",
+                "mr": "र्‍हासमान परताव्याचा नियम सांगतो की एक निविष्ट वाढवल्याने (इतर स्थिर ठेवून) अखेरीस उत्पादन वाढ कमी होत जाते."
+              },
+              "keywords": {
+                "en": [
+                  "returns"
+                ],
+                "hi": [
+                  "प्रतिफल"
+                ],
+                "mr": [
+                  "परतावा"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Diminishing returns is like adding more instruments to a song — at first it sounds richer, but eventually it becomes cluttered noise."
+            },
+            {
+              "id": "eco-4-2",
+              "name": {
+                "en": "Costs",
+                "hi": "लागत",
+                "mr": "खर्च"
+              },
+              "description": {
+                "en": "Fixed costs don't change with output (rent). Variable costs do (raw materials). Total cost = fixed + variable. Average and marginal costs help firms decide optimal production.",
+                "hi": "स्थिर लागत उत्पादन के साथ नहीं बदलती (किराया)। परिवर्तनीय लागत बदलती है (कच्चा माल)। कुल लागत = स्थिर + परिवर्तनीय।",
+                "mr": "स्थिर खर्च उत्पादनासह बदलत नाही (भाडे). परिवर्तनीय खर्च बदलतो (कच्चा माल). एकूण खर्च = स्थिर + परिवर्तनीय."
+              },
+              "keywords": {
+                "en": [
+                  "fixed cost",
+                  "variable cost",
+                  "total cost",
+                  "average cost",
+                  "marginal cost"
+                ],
+                "hi": [
+                  "स्थिर लागत",
+                  "परिवर्तनीय लागत",
+                  "कुल लागत",
+                  "औसत लागत",
+                  "सीमांत लागत"
+                ],
+                "mr": [
+                  "स्थिर खर्च",
+                  "परिवर्तनीय खर्च",
+                  "एकूण खर्च",
+                  "सरासरी खर्च",
+                  "किरकोळ खर्च"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  },
+                  {
+                    "title": "Excuse Me",
+                    "artist": "KING",
+                    "genre": "Hip Hop"
+                  }
+                ]
+              },
+              "reason": "Production costs are like making an album: studio rent is fixed cost, session musicians are variable cost — understanding both helps optimize the budget."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "name": {
+            "en": "Introduction to Management",
+            "hi": "प्रबंधन का परिचय",
+            "mr": "व्यवस्थापनाचा परिचय"
+          },
+          "topics": [
+            {
+              "id": "eco-5-1",
+              "name": {
+                "en": "Management",
+                "hi": "प्रबंधन",
+                "mr": "व्यवस्थापन"
+              },
+              "description": {
+                "en": "Management is the process of planning, organizing, leading, and controlling resources to achieve organizational goals efficiently and effectively.",
+                "hi": "प्रबंधन संगठनात्मक लक्ष्यों को प्राप्त करने के लिए संसाधनों की योजना, संगठन, नेतृत्व और नियंत्रण की प्रक्रिया है।",
+                "mr": "व्यवस्थापन म्हणजे संघटनात्मक उद्दिष्टे साध्य करण्यासाठी साधनसंपत्तीचे नियोजन, संघटन, नेतृत्व आणि नियंत्रण करण्याची प्रक्रिया."
+              },
+              "keywords": {
+                "en": [
+                  "functions",
+                  "importance"
+                ],
+                "hi": [
+                  "कार्य",
+                  "महत्व"
+                ],
+                "mr": [
+                  "कार्ये",
+                  "महत्त्व"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nPlanning, organizing, leading every day,\nControlling all the resources in a systematic way,\nThat's management — the art of getting things done right,\nThrough people and processes, keeping goals in sight.\n\n[Chorus]\nManage well, manage smart,\nEvery function plays its part,\nFrom the vision to the action on the ground,\nManagement is where success is found.\n\n[Verse 2]\nEfficiency means doing things the right way,\nEffectiveness means doing the right things every day,\nCombine them both and watch the organization grow,\nManagement's the engine — now you're in the know."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Managing an organization is like producing a hit album — it requires planning, organizing talent, leading the vision, and controlling quality."
+            },
+            {
+              "id": "eco-5-2",
+              "name": {
+                "en": "Management Thought",
+                "hi": "प्रबंधन विचारधारा",
+                "mr": "व्यवस्थापन विचारप्रणाली"
+              },
+              "description": {
+                "en": "Key management thinkers: F.W. Taylor (scientific management), Henry Fayol (14 principles of management), and Elton Mayo (human relations and Hawthorne studies).",
+                "hi": "प्रमुख प्रबंधन विचारक: टेलर (वैज्ञानिक प्रबंधन), फेयोल (प्रबंधन के 14 सिद्धांत), और मेयो (मानवीय संबंध)।",
+                "mr": "प्रमुख व्यवस्थापन विचारवंत: टेलर (वैज्ञानिक व्यवस्थापन), फेयॉल (व्यवस्थापनाची 14 तत्त्वे), आणि मेयो (मानवी संबंध)."
+              },
+              "keywords": {
+                "en": [
+                  "F.W. Taylor",
+                  "Henry Fayol",
+                  "Elton Mayo"
+                ],
+                "hi": [
+                  "एफ.डब्ल्यू. टेलर",
+                  "हेनरी फेयोल",
+                  "एल्टन मेयो"
+                ],
+                "mr": [
+                  "एफ.डब्ल्यू. टेलर",
+                  "हेन्री फेयॉल",
+                  "एल्टन मेयो"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Taylor, Fayol, and Mayo each brought a different perspective to management — like how different producers bring unique styles to music."
+            },
+            {
+              "id": "eco-5-3",
+              "name": {
+                "en": "Planning",
+                "hi": "योजना",
+                "mr": "नियोजन"
+              },
+              "description": {
+                "en": "Planning means setting goals and deciding how to achieve them. Strategic management involves long-term decisions about direction, considering constraints and trade-offs.",
+                "hi": "योजना का अर्थ है लक्ष्य निर्धारित करना और उन्हें प्राप्त करने का तरीका तय करना। रणनीतिक प्रबंधन दीर्घकालिक निर्णय लेता है।",
+                "mr": "नियोजन म्हणजे उद्दिष्टे निश्चित करणे आणि ती साध्य कसे करायची हे ठरवणे. धोरणात्मक व्यवस्थापन दीर्घकालीन निर्णय घेते."
+              },
+              "keywords": {
+                "en": [
+                  "planning",
+                  "decision making",
+                  "constraints",
+                  "strategic management"
+                ],
+                "hi": [
+                  "योजना",
+                  "निर्णय लेना",
+                  "बाधाएं",
+                  "रणनीतिक प्रबंधन"
+                ],
+                "mr": [
+                  "नियोजन",
+                  "निर्णय घेणे",
+                  "मर्यादा",
+                  "धोरणात्मक व्यवस्थापन"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Planning in management is like composing a song — you set the structure, make creative decisions, and work within constraints to create something great."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "name": {
+            "en": "Organizing",
+            "hi": "संगठन",
+            "mr": "संघटन"
+          },
+          "topics": [
+            {
+              "id": "eco-6-1",
+              "name": {
+                "en": "Organization Structure",
+                "hi": "संगठन संरचना",
+                "mr": "संघटन रचना"
+              },
+              "description": {
+                "en": "Line organization has a direct chain of command. Staff organization adds specialist advisors. Most firms use a combination of both structures.",
+                "hi": "लाइन संगठन में सीधी कमान श्रृंखला होती है। स्टाफ संगठन विशेषज्ञ सलाहकार जोड़ता है।",
+                "mr": "लाइन संघटनात थेट आदेशाची साखळी असते. स्टाफ संघटन तज्ञ सल्लागार जोडते."
+              },
+              "keywords": {
+                "en": [
+                  "line",
+                  "staff"
+                ],
+                "hi": [
+                  "लाइन",
+                  "स्टाफ"
+                ],
+                "mr": [
+                  "लाइन",
+                  "स्टाफ"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Organization structure is like a band setup — the lead singer (line) performs directly while backup vocalists and technicians (staff) provide support."
+            },
+            {
+              "id": "eco-6-2",
+              "name": {
+                "en": "Role of Delegation",
+                "hi": "प्रत्यायोजन की भूमिका",
+                "mr": "अधिकार प्रदानाची भूमिका"
+              },
+              "description": {
+                "en": "Delegation means assigning authority and responsibility to subordinates. It empowers employees and helps managers focus on higher-level strategic tasks.",
+                "hi": "प्रत्यायोजन का अर्थ है अधीनस्थों को अधिकार और जिम्मेदारी सौंपना। यह कर्मचारियों को सशक्त बनाता है।",
+                "mr": "अधिकार प्रदान म्हणजे अधीनस्थांना अधिकार आणि जबाबदारी सोपवणे. यामुळे कर्मचाऱ्यांना सक्षम बनवले जाते."
+              },
+              "keywords": {
+                "en": [
+                  "delegation"
+                ],
+                "hi": [
+                  "प्रत्यायोजन"
+                ],
+                "mr": [
+                  "अधिकार प्रदान"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Delegation is like a band leader trusting each musician to play their part — sharing responsibility creates a better overall performance."
+            },
+            {
+              "id": "eco-6-3",
+              "name": {
+                "en": "Human Resource Management",
+                "hi": "मानव संसाधन प्रबंधन",
+                "mr": "मानव संसाधन व्यवस्थापन"
+              },
+              "description": {
+                "en": "HRM deals with recruiting, training, compensating, and retaining employees. People are an organization's most valuable resource.",
+                "hi": "मानव संसाधन प्रबंधन भर्ती, प्रशिक्षण, मुआवजा और कर्मचारी प्रतिधारण से संबंधित है।",
+                "mr": "मानव संसाधन व्यवस्थापन भरती, प्रशिक्षण, मोबदला आणि कर्मचारी धारणा यांशी संबंधित आहे."
+              },
+              "keywords": {
+                "en": [
+                  "HRM"
+                ],
+                "hi": [
+                  "मानव संसाधन प्रबंधन"
+                ],
+                "mr": [
+                  "मानव संसाधन व्यवस्थापन"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "HRM is like talent management in the music industry — finding the right artists, developing their skills, and keeping them motivated."
+            },
+            {
+              "id": "eco-6-4",
+              "name": {
+                "en": "Managing Teams",
+                "hi": "टीमों का प्रबंधन",
+                "mr": "संघांचे व्यवस्थापन"
+              },
+              "description": {
+                "en": "Effective leadership inspires teams toward shared goals. Motivation drives performance. Together, leadership and motivation create high-performing teams.",
+                "hi": "प्रभावी नेतृत्व टीमों को साझा लक्ष्यों की ओर प्रेरित करता है। प्रेरणा प्रदर्शन को बढ़ाती है।",
+                "mr": "प्रभावी नेतृत्व संघांना सामायिक उद्दिष्टांकडे प्रेरित करते. प्रेरणा कामगिरी वाढवते."
+              },
+              "keywords": {
+                "en": [
+                  "leadership",
+                  "motivation"
+                ],
+                "hi": [
+                  "नेतृत्व",
+                  "प्रेरणा"
+                ],
+                "mr": [
+                  "नेतृत्व",
+                  "प्रेरणा"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Great teams need great leadership and motivation — like a band that plays together in sync, inspired by a shared musical vision."
+            },
+            {
+              "id": "eco-6-5",
+              "name": {
+                "en": "Motivation Theories",
+                "hi": "प्रेरणा सिद्धांत",
+                "mr": "प्रेरणा सिद्धांत"
+              },
+              "description": {
+                "en": "Maslow's hierarchy of needs, Herzberg's two-factor theory (hygiene and motivators), and McClelland's achievement theory each explain what drives people to perform at work.",
+                "hi": "मास्लो की आवश्यकताओं का पदानुक्रम, हर्ज़बर्ग का द्वि-कारक सिद्धांत, और मैक्लेलैंड का उपलब्धि सिद्धांत कार्य प्रेरणा समझाते हैं।",
+                "mr": "मास्लोची गरजांची श्रेणी, हर्झबर्गचा द्वि-घटक सिद्धांत, आणि मॅकक्लेलँडचा उपलब्धी सिद्धांत कामाची प्रेरणा समजावतात."
+              },
+              "keywords": {
+                "en": [
+                  "Maslow",
+                  "Herzberg",
+                  "McClelland"
+                ],
+                "hi": [
+                  "मास्लो",
+                  "हर्ज़बर्ग",
+                  "मैक्लेलैंड"
+                ],
+                "mr": [
+                  "मास्लो",
+                  "हर्झबर्ग",
+                  "मॅकक्लेलँड"
+                ]
+              },
+              "formula": null,
+              "lyrics": {
+                "en": "[Verse 1]\nMaslow built a pyramid of human needs,\nFrom food and shelter up to where achievement leads,\nPhysiological, safety, love, esteem, and more,\nSelf-actualization sits right at the top floor.\n\n[Chorus]\nWhat motivates us? What makes us strive?\nHerzberg said two factors keep the workplace alive,\nHygiene keeps dissatisfaction at bay,\nMotivators are what make us love the working day.\n\n[Verse 2]\nMcClelland spoke of achievement, power, and affiliation,\nThree needs that drive us in every situation,\nUnderstanding motivation helps a leader see,\nWhat inspires their team to be the best they can be."
+              },
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Maslow, Herzberg, and McClelland explain what drives people — just as rhythm, melody, and lyrics each contribute to what makes a song memorable."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "name": {
+            "en": "Controlling",
+            "hi": "नियंत्रण",
+            "mr": "नियंत्रण"
+          },
+          "topics": [
+            {
+              "id": "eco-7-1",
+              "name": {
+                "en": "Controlling",
+                "hi": "नियंत्रण",
+                "mr": "नियंत्रण"
+              },
+              "description": {
+                "en": "Controlling ensures actual performance matches planned goals. Quality control maintains product standards through inspection, feedback, and corrective action.",
+                "hi": "नियंत्रण सुनिश्चित करता है कि वास्तविक प्रदर्शन नियोजित लक्ष्यों से मेल खाता है। गुणवत्ता नियंत्रण उत्पाद मानक बनाए रखता है।",
+                "mr": "नियंत्रण वास्तविक कामगिरी नियोजित उद्दिष्टांशी जुळत असल्याची खात्री करते. गुणवत्ता नियंत्रण उत्पाद मानके राखते."
+              },
+              "keywords": {
+                "en": [
+                  "quality control"
+                ],
+                "hi": [
+                  "गुणवत्ता नियंत्रण"
+                ],
+                "mr": [
+                  "गुणवत्ता नियंत्रण"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Quality control in management is like sound engineering — constant monitoring and adjustments ensure the final product meets the highest standards."
+            },
+            {
+              "id": "eco-7-2",
+              "name": {
+                "en": "Functional Orientation",
+                "hi": "कार्यात्मक अभिविन्यास",
+                "mr": "कार्यात्मक दृष्टिकोन"
+              },
+              "description": {
+                "en": "Organizations have four key functional areas: Finance (money management), Marketing (selling products), Human Resources (managing people), and Operations (production processes).",
+                "hi": "संगठनों में चार प्रमुख कार्यात्मक क्षेत्र हैं: वित्त, विपणन, मानव संसाधन, और संचालन।",
+                "mr": "संघटनांमध्ये चार प्रमुख कार्यात्मक क्षेत्रे आहेत: अर्थ, विपणन, मानव संसाधन, आणि कार्यवाही."
+              },
+              "keywords": {
+                "en": [
+                  "finance",
+                  "marketing",
+                  "human resources",
+                  "operations"
+                ],
+                "hi": [
+                  "वित्त",
+                  "विपणन",
+                  "मानव संसाधन",
+                  "संचालन"
+                ],
+                "mr": [
+                  "अर्थ",
+                  "विपणन",
+                  "मानव संसाधन",
+                  "कार्यवाही"
+                ]
+              },
+              "formula": null,
+              "lyrics": {},
+              "songs": {
+                "en": [
+                  {
+                    "title": "Helicopter",
+                    "artist": "A$AP Rocky",
+                    "genre": "Hip Hop"
+                  },
+                  {
+                    "title": "I Just Might",
+                    "artist": "Bruno Mars",
+                    "genre": "Pop"
+                  }
+                ],
+                "hi": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ],
+                "mr": [
+                  {
+                    "title": "Param Sundari",
+                    "artist": "Shilpa Rao",
+                    "genre": "Bollywood"
+                  },
+                  {
+                    "title": "Tu Aa",
+                    "artist": "KING",
+                    "genre": "Pop"
+                  }
+                ]
+              },
+              "reason": "Finance, marketing, HR, and operations work together like instruments in an orchestra — each plays a distinct role in the organization's symphony."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
